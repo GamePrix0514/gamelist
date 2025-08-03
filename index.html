@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,142 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Prix Gamelist</title>
   <style>
-    body {
-      background-color: #111;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #222;
-      padding: 20px;
-      text-align: center;
-      font-size: 2em;
-    }
-    .search-box {
-      text-align: center;
-      margin: 20px;
-    }
-    .search-box input {
-      padding: 10px;
-      width: 80%;
-      font-size: 1em;
-      max-width: 500px;
-    }
-    .game-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 15px;
-      padding: 20px;
-    }
-    .game-card {
-      background-color: #333;
-      border: 2px solid transparent;
-      border-radius: 10px;
-      padding: 10px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
-    .game-card img {
-      width: 200px;
-      height: 150px;
-      object-fit: contain;
-      border-radius: 5px;
-      background-color: #000;
-      display: block;
-      margin: 0 auto;
-    }
-    .game-card.selected {
-      border-color: #4caf50;
-      background-color: rgba(29, 63, 42, 0.2);
-      opacity: 0.7;
-    }
-    .right-panel {
-      position: fixed;
-      top: 100px;
-      right: 40px;
-      width: 350px;
-      background-color: rgba(34, 34, 34, 0.9);
-      padding: 0;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
-      border: 1px solid #555;
-      overflow: hidden;
-      font-size: 14px;
-      z-index: 1000;
-    }
-    .browser-header {
-      background-color: #1e1e1e;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: move;
-      border-bottom: 1px solid #444;
-    }
-    .browser-header h3 {
-      margin: 0;
-      font-size: 16px;
-    }
-    .browser-controls button {
-      background-color: #4caf50;
-      border: none;
-      color: white;
-      padding: 5px 10px;
-      margin-left: 5px;
-      border-radius: 4px;
-      font-size: 12px;
-      cursor: pointer;
-    }
-    .panel-body {
-      padding: 15px;
-    }
-    .btn {
-      padding: 10px;
-      margin-top: 10px;
-      width: 100%;
-      background-color: #4caf50;
-      border: none;
-      color: white;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    .warning {
-      color: red;
-      font-weight: bold;
-    }
-    #miniDisplay {
-      display: none;
-      padding: 10px 15px;
-      font-weight: bold;
-    }
-    li button {
-      background-color: #f44336;
-      color: white;
-      border: none;
-      margin-left: 10px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 12px;
-    }
+    body { background-color: #111; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #222; padding: 20px; text-align: center; font-size: 2em; }
+    .search-box { text-align: center; margin: 20px; }
+    .search-box input { padding: 10px; width: 80%; font-size: 1em; max-width: 500px; }
+    .game-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; padding: 20px; }
+    .game-card { background-color: #333; border: 2px solid transparent; border-radius: 10px; padding: 10px; text-align: center; cursor: pointer; transition: all 0.3s; }
+    .game-card img { width: 200px; height: 150px; object-fit: contain; border-radius: 5px; background-color: #000; display: block; margin: 0 auto; }
+    .game-card.selected { border-color: #4caf50; background-color: rgba(29, 63, 42, 0.2); opacity: 0.7; }
+    .right-panel { position: fixed; bottom: 20px; right: 20px; width: 350px; max-height: 90vh; background-color: rgba(34, 34, 34, 0.95); border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.6); border: 1px solid #555; display: flex; flex-direction: column; z-index: 1000; }
+    .browser-header { background-color: #1e1e1e; padding: 10px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #444; position: sticky; top: 0; z-index: 2; cursor: move; }
+    .browser-header h3 { margin: 0; font-size: 16px; }
+    .browser-controls button { background-color: #4caf50; border: none; color: white; padding: 5px 10px; margin-left: 5px; border-radius: 4px; font-size: 12px; cursor: pointer; }
+    .panel-body { padding: 15px; overflow-y: auto; flex: 1; }
+    .btn { padding: 10px; margin-top: 10px; width: 100%; background-color: #4caf50; border: none; color: white; cursor: pointer; border-radius: 5px; }
+    .warning { color: red; font-weight: bold; }
+    #miniDisplay { display: none; padding: 10px 15px; font-weight: bold; }
+    li button { background-color: #f44336; color: white; border: none; margin-left: 10px; padding: 3px 8px; border-radius: 4px; cursor: pointer; font-size: 12px; }
     @media (max-width: 768px) {
-      .game-list {
-        grid-template-columns: 1fr;
-        padding: 10px;
-      }
-      .search-box input {
-        width: 90%;
-      }
-      .right-panel {
-        width: 95%;
-        right: 2.5%;
-        top: auto;
-        bottom: 20px;
-        border-radius: 10px;
-      }
+      .game-list { grid-template-columns: 1fr; padding: 10px; }
+      .search-box input { width: 90%; }
+      .right-panel { width: 95%; right: 2.5%; bottom: 10px; top: auto; max-height: 85vh; }
     }
   </style>
 </head>
@@ -150,18 +36,15 @@
     <input type="text" id="searchInput" placeholder="Search game...">
   </div>
   <div class="game-list" id="gameList"></div>
-
   <div class="right-panel" id="rightPanel">
-    <div class="browser-header">
+    <div class="browser-header" id="dragHeader">
       <h3>Selected Games</h3>
       <div class="browser-controls">
         <button onclick="togglePanel(true)">Minimize</button>
         <button onclick="togglePanel(false)">Maximize</button>
       </div>
     </div>
-    <div id="miniDisplay">
-      Total: <span id="miniTotalSize">0</span> GB
-    </div>
+    <div id="miniDisplay">Total: <span id="miniTotalSize">0</span> GB</div>
     <div class="panel-body" id="panelContent">
       <ul id="selectedGames"></ul>
       <p>Total Size: <span id="totalSize">0</span> GB</p>
@@ -169,10 +52,9 @@
       <button class="btn" onclick="copyToClipboard()">Copy to Clipboard</button>
     </div>
   </div>
-
   <script>
     const games = [
-     { name: "A PLAGUE TALE REQUIEM ", size: 47.4, img: "https://next-media.elkjop.com/image/dv_web_D1800010021388637/597467/a-plague-tale-requiem-pc-windows.jpg?w=640&q=75" },
+      { name: "A PLAGUE TALE REQUIEM ", size: 47.4, img: "https://next-media.elkjop.com/image/dv_web_D1800010021388637/597467/a-plague-tale-requiem-pc-windows.jpg?w=640&q=75" },
       { name: "A QUIET PLACE   ", size: 37.5, img: "https://upload.wikimedia.org/wikipedia/en/0/07/A_Quiet_Place_The_Road_Ahead_%282024%29_cover_art.jpg" },
       { name: "A WAY OUT", size: 20.9, img: "https://www.mmoga.co.uk/images/games/_ext/1058304/a-way-out_large;width=360,height=340,64b8835581a3fa8fcdbb67b07d81cd2ac1ed28c9.png" },
       { name: "AGE OF EMPIRES 2 AGE OF KINGS", size: 0.334, img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png/250px-Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png" },
@@ -196,6 +78,7 @@
   { name: "ASSASSINS CREED MIRAGE V1.0.6", size: 41.8, img: "https://cdn2.penguin.com.au/covers/400/9781506741291.jpg" },
   { name: "ATTACK ON TITAN 2", size: 24.1, img: "https://www.mmoga.com/images/games/_ext/1288947/attack-on-titan-2_large.png" },
   { name: "AVOWED", size: 73.4, img: "https://upload.wikimedia.org/wikipedia/en/4/4d/Avowed_key_art.jpeg" },
+ { name: "BACK FOR BLOOD", size: 46.3, img: "https://upload.wikimedia.org/wikipedia/en/6/60/Back_4_Blood_cover_art.jpg" },
   { name: "BALDUR'S GATE 3", size: 147, img: "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg" },
   { name: "BANISHERS GHOSTS OF NEW EDEN V1.3.1.0 + WANDERER SET DLC", size: 51.3, img: "https://upload.wikimedia.org/wikipedia/en/b/b5/Banishers_Ghosts_of_New_Eden_cover_art.jpg" },
   { name: "BATLLEFIELD BAD COMPANY 2", size: 7.92, img: "https://upload.wikimedia.org/wikipedia/en/b/b3/Battlefield_Bad_Company_2_cover.jpg" },
@@ -223,6 +106,7 @@
 { name: "CALL OF DUTY 5 WORLD AT WAR", size: 6.73, img: "https://upload.wikimedia.org/wikipedia/en/6/69/WAW_Cover_Art.jpg" },
 { name: "CALL OF DUTY ADVANCED WARFARE", size: 43.8, img: "https://upload.wikimedia.org/wikipedia/en/3/3b/Advanced_Warfare.jpg" },
 { name: "CALL OF DUTY BLACK OPS", size: 11.2, img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/250px-CoD_Black_Ops_cover.png" },
+{ name: "CALL OF DUTY BLACK OPS 6 CAMPAIGN ONLY", size: 48, img: "https://upload.wikimedia.org/wikipedia/en/c/c9/Call_of_Duty_Black_Ops_6_Key_Art.png" },
 { name: "CALL OF DUTY - BLACK OPS 2", size: 22.2, img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Call_of_Duty_Black_Ops_II_box_artwork.png/250px-Call_of_Duty_Black_Ops_II_box_artwork.png" },
 { name: "CALL OF DUTY BLACK OPS III", size: 55.4, img: "https://upload.wikimedia.org/wikipedia/en/b/b1/Black_Ops_3.jpg" },
 { name: "CALL OF DUTY GHOSTS", size: 29.6, img: "https://upload.wikimedia.org/wikipedia/en/9/9c/Call_of_duty_ghosts_box_art.jpg" },
@@ -231,7 +115,8 @@
 { name: "CALL OF DUTY MODERN WARFARE 3", size: 17.1, img: "https://upload.wikimedia.org/wikipedia/en/b/bf/Call_of_Duty_Modern_Warfare_3_box_art.png" },
 { name: "CALL OF DUTY MODERN WARFARE 4", size: 5.56, img: "https://upload.wikimedia.org/wikipedia/en/5/5f/Call_of_Duty_4_Modern_Warfare.jpg" },
 { name: "CALL OF DUTY MODERN WARFARE REMASTERED", size: 41.5, img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c4c1bfd6-740f-4577-a3d0-0cb5b71fb2df/dghcrku-9ddee17d-91fc-4ca3-b9a3-adb049ebb96f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M0YzFiZmQ2LTc0MGYtNDU3Ny1hM2QwLTBjYjViNzFmYjJkZlwvZGdoY3JrdS05ZGRlZTE3ZC05MWZjLTRjYTMtYjlhMy1hZGIwNDllYmI5NmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nBKcqrsYvn4BxOhJDWUSLH631O0essCjgyB0bd4vUDw" },
-  { name: "CALL OF DUTY WWII", size: 41.8, img: "https://upload.wikimedia.org/wikipedia/en/1/18/Call_of_Duty_WWII_Cover_Art.jpg" },
+{ name: "CALL OF DUTY VANGUARD", size: 83.2, img: "https://upload.wikimedia.org/wikipedia/en/0/06/Call_of_Duty_Vanguard_cover_art.jpg" },
+{ name: "CALL OF DUTY WWII", size: 41.8, img: "https://upload.wikimedia.org/wikipedia/en/1/18/Call_of_Duty_WWII_Cover_Art.jpg" },
   { name: "CITIES - SKYLINES COMPLETE DLC", size: 16.3, img: "https://m.media-amazon.com/images/I/61fJdSCC1BL._UF1000,1000_QL80_.jpg" },
   { name: "CITIES SKYLINES 2", size: 59.3, img: "https://upload.wikimedia.org/wikipedia/en/3/35/Cities_Skylines_II_Cover_Art.png" },
   { name: "CLAIR OBSCUR EXPEDITION-33", size: 42.2, img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/Clair_Obscur%2C_Expedition_33_Cover_1.webp/272px-Clair_Obscur%2C_Expedition_33_Cover_1.webp.png" },
@@ -241,6 +126,7 @@
   { name: "COMMAND AND CONQUER 4 - TIBERIAN TWILIGHT", size: 5.41, img: "https://upload.wikimedia.org/wikipedia/en/8/83/Cc4tt-cover.jpg" },
   { name: "COMPANY OF HEROES - COMPLETE EDITION", size: 8.91, img: "https://down-ph.img.susercontent.com/file/ph-11134207-7r98z-lwc4e3wxcqqp47" },
   { name: "COMPANY OF HEROES 2 - MASTER COLLECTION", size: 31.0, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZ74WuxispkEmiS_k395Zm6ENUhXJnVKgxdWlRkm2qdxwD_Vbr8nqg2oABpF8tWNUmQ8&usqp=CAU" },
+  { name: "CONTRA OPERATION GALUGA", size: 13.5, img: "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000063988/desc/d3f76db9ca59f4d8e0f9856ed53b9df6fc5086323ce717a1c8ffe0e07f5f43b5" },
   { name: "COUNTER STRIKE XTREME", size: 2.12, img: "https://2img.net/h/www.fullprogramlarindir.com/wp-content/uploads/2014/05/Counter-Strike-Xtreme-V6-2011-Cover.jpg" },
   { name: "CRASH BANDICOOT 4", size: 23.3, img: "https://upload.wikimedia.org/wikipedia/en/3/39/Crash_Bandicoot_4_Box_Art.jpeg" },
   { name: "CRYSIS 3 REMASTERED", size: 18.0, img: "https://store-images.s-microsoft.com/image/apps.47687.14224226440896945.9b286b99-0293-4c31-9568-1be6d21203a4.337618c2-8e74-4e4f-9881-87bf6a2d2067" },
@@ -320,85 +206,150 @@
 { name: "MARVELS SPIDER-MAN REMASTERED", size: 65.9, img: "https://digital.datablitz.com.ph/cdn/shop/products/spiderman_remastered.png?v=1660296077" },
 { name: "MAX PAYNE 3", size: 32.8, img: "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Max_Payne_3_Cover.jpg/250px-Max_Payne_3_Cover.jpg" },
 { name: "MEDAL OF HONOR", size: 4.84, img: "https://upload.wikimedia.org/wikipedia/en/b/ba/Medal_of_Honor_2010_Box_art.jpg" },
-{ name: "MEDAL OF HONOR AIRBORNE", size: 3.94, img: "https://via.placeholder.com/200x150?text=MEDAL+OF+HONOR+AIRBORNE" },
-{ name: "MEDAL OF HONOR ALLIED ASSAULT WAR CHEST", size: 2.52, img: "https://via.placeholder.com/200x150?text=MOH+WAR+CHEST" },
-{ name: "MEDAL OF HONOR PACIFIC ASSAULT", size: 3.54, img: "https://via.placeholder.com/200x150?text=MOH+PACIFIC+ASSAULT" },
-{ name: "MEDAL OF HONOR WARFIGHTER", size: 15.8, img: "https://via.placeholder.com/200x150?text=MOH+WARFIGHTER" },
-{ name: "METAL GEAR SOLID V THE PHANTOM PAIN", size: 22.9, img: "https://via.placeholder.com/200x150?text=MGSV+PHANTOM+PAIN" },
-{ name: "METAL GEAR SOLID V-GROUND ZEROES", size: 0, img: "https://via.placeholder.com/200x150?text=MGSV+GROUND+ZEROES" },
+{ name: "MEDAL OF HONOR AIRBORNE", size: 3.94, img: "https://upload.wikimedia.org/wikipedia/en/f/fa/MoH_Airborne_cover_PC_DVD.jpg" },
+{ name: "MEDAL OF HONOR ALLIED ASSAULT WAR CHEST", size: 2.52, img: "https://media.s-bol.com/BRXgyk44ABko/N91wNL2/550x783.jpg" },
+{ name: "MEDAL OF HONOR PACIFIC ASSAULT", size: 3.54, img: "https://static.wikia.nocookie.net/medalofhonor/images/5/5a/PacificAssaultBox.jpg/revision/latest?cb=20110318040337" },
+{ name: "MEDAL OF HONOR WARFIGHTER", size: 15.8, img: "https://upload.wikimedia.org/wikipedia/en/e/e2/Warfighter.jpg" },
+{ name: "METAL GEAR SOLID V THE PHANTOM PAIN", size: 22.9, img: "https://upload.wikimedia.org/wikipedia/en/8/8f/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png" },
+{ name: "METAL GEAR SOLID V-GROUND ZEROES", size: 0, img: "https://upload.wikimedia.org/wikipedia/en/0/07/MGSV_Ground_Zeroes_boxart.jpg" },
 { name: "METAL SLUG COLLECTION", size: 5.88, img: "https://via.placeholder.com/200x150?text=METAL+SLUG+COLLECTION" },
-{ name: "MICROSOFT FLIGHT SIMULATOR", size: 95.3, img: "https://via.placeholder.com/200x150?text=FLIGHT+SIMULATOR" },
-{ name: "MIDDLE EARTH SHADOW OF WAR DEFINITIVE EDITION", size: 109, img: "https://via.placeholder.com/200x150?text=SHADOW+OF+WAR+DE" },
-{ name: "MINDSEYE", size: 49.5, img: "https://via.placeholder.com/200x150?text=MINDSEYE" },
-{ name: "MINECRAFT DUNGEONS", size: 5.08, img: "https://via.placeholder.com/200x150?text=MINECRAFT+DUNGEONS" },
-{ name: "MONSTER HUNTER WORLD ICEBORNE", size: 51.2, img: "https://via.placeholder.com/200x150?text=MONSTER+HUNTER+ICEBORNE" },
-{ name: "MORTAL KOMBAT KOMPLETE EDITION", size: 9.24, img: "https://via.placeholder.com/200x150?text=MK+KOMPLETE+EDITION" },
-{ name: "MORTAL KOMBAT XI", size: 103, img: "https://via.placeholder.com/200x150?text=MORTAL+KOMBAT+XI" },
-{ name: "MOTOGP 24", size: 24.4, img: "https://via.placeholder.com/200x150?text=MOTOGP+24" },
+{ name: "MICROSOFT FLIGHT SIMULATOR", size: 95.3, img: "https://assets.xboxservices.com/assets/8e/48/8e4805cd-f0b1-422d-88e8-73ce2d0c4368.jpg?n=Microsoft-Flight-Simulator_GLP-Page-Hero-0_1083x1222_06.jpg" },
+{ name: "MIDDLE EARTH SHADOW OF WAR DEFINITIVE EDITION", size: 109, img: "https://cdn.cdkeys.com/media/catalog/product/n/e/new_project_12_.jpg" },
+{ name: "MINDSEYE", size: 49.5, img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/MindsEye_cover_art.png/250px-MindsEye_cover_art.png" },
+{ name: "MINECRAFT DUNGEONS", size: 5.08, img: "https://upload.wikimedia.org/wikipedia/en/7/73/Minecraft_Dungeons_cover_art.jpg" },
+{ name: "MONSTER HUNTER WORLD ICEBORNE", size: 51.2, img: "https://upload.wikimedia.org/wikipedia/en/b/be/Monster_Hunter_World_Iceborne_cover_art.png" },
+{ name: "MORTAL KOMBAT KOMPLETE EDITION", size: 9.24, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTalNKwVPGUDPPaUjoKP0eYJSx2XCooEWoHHA&s" },
+{ name: "MORTAL KOMBAT XI", size: 103, img: "https://upload.wikimedia.org/wikipedia/en/7/7e/Mortal_Kombat_11_cover_art.png" },
+{ name: "MOTOGP 24", size: 24.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAQtnf8IL9VHUUWuqbi-spTAlVHJ818K4Ng&s" },
 { name: "MOUNT AND BLADE", size: 0, img: "https://via.placeholder.com/200x150?text=MOUNT+AND+BLADE" },
-{ name: "MOUNT AND BLADE II BANNERLORD", size: 0, img: "https://via.placeholder.com/200x150?text=BLADE+II+BANNERLORD" },
-{ name: "NARUTO SHIPUUDEN ULTIMATE NINJA STORM 4", size: 38.9, img: "https://via.placeholder.com/200x150?text=NARUTO+STORM+4" },
-{ name: "NARUTO SHIPUUDEN ULTIMATE NINJA STORM 4 ROAD TO BORUTO NEXT GENERATION", size: 39.0, img: "https://via.placeholder.com/200x150?text=NARUTO+BORUTO+GEN" },
-{ name: "NARUTO X BORUTO ULTIMATE NINJA STORM CONNECTIONS", size: 29.7, img: "https://via.placeholder.com/200x150?text=NARUTO+X+BORUTO" },
-{ name: "NBA 2K14", size: 7.21, img: "https://via.placeholder.com/200x150?text=NBA+2K14" },
-{ name: "NBA 2K16", size: 42.4, img: "https://via.placeholder.com/200x150?text=NBA+2K16" },
-{ name: "NBA 2K25 (MODDED FROM 2K23)", size: 144, img: "https://via.placeholder.com/200x150?text=NBA+2K25" },
-{ name: "NEED FOR SPEED CARBON", size: 5.11, img: "https://via.placeholder.com/200x150?text=NFS+Carbon" },
-{ name: "NEED FOR SPEED HEAT DELUXE EDITION", size: 30.2, img: "https://via.placeholder.com/200x150?text=NFS+Heat" },
-{ name: "NEED FOR SPEED HOT PURSUIT", size: 0, img: "https://via.placeholder.com/200x150?text=NFS+Hot+Pursuit" },
-{ name: "NEED FOR SPEED MOST WANTED (2005)", size: 2.78, img: "https://via.placeholder.com/200x150?text=NFS+MW+2005" },
-{ name: "NEED FOR SPEED MOST WANTED (2012)", size: 6.32, img: "https://via.placeholder.com/200x150?text=NFS+MW+2012" },
-{ name: "NEED FOR SPEED PORSHE UNLEASED", size: 0, img: "https://via.placeholder.com/200x150?text=NFS+Porsche" },
-{ name: "NEED FOR SPEED PRO STREET", size: 9.57, img: "https://via.placeholder.com/200x150?text=NFS+Pro+Street" },
-{ name: "NEED FOR SPEED SHIFT", size: 0, img: "https://via.placeholder.com/200x150?text=NFS+Shift" },
-{ name: "NEED FOR SPEED UNDERCOVER", size: 5.9, img: "https://via.placeholder.com/200x150?text=NFS+Undercover" },
-{ name: "NEED FOR SPEED UNDERGROUND", size: 0, img: "https://via.placeholder.com/200x150?text=NFS+Underground" },
-{ name: "NEED FOR SPEED UNDERGROUND 2", size: 2.91, img: "https://via.placeholder.com/200x150?text=NFS+Underground+2" },
-{ name: "NINJA GAIDEN 2 BLACK", size: 81.1, img: "https://via.placeholder.com/200x150?text=Ninja+Gaiden+2" },
-{ name: "NO MANS SKY", size: 18.9, img: "https://via.placeholder.com/200x150?text=No+Mans+Sky" },
-{ name: "ONE PIECE PIRATE WARRIORS 3 GOLD EDITION", size: 11.4, img: "https://via.placeholder.com/200x150?text=One+Piece+PW3" },
-{ name: "ONE PIECE PIRATE WARRIORS 4 ULTIMATE EDITION", size: 26.6, img: "https://via.placeholder.com/200x150?text=One+Piece+PW4" },
-{ name: "ONE PIECE UNLIMITED WORLD RED - DELUXE EDITION", size: 11.7, img: "https://via.placeholder.com/200x150?text=One+Piece+Unlimited+Red" },
-{ name: "ONE PIECE WORLD SEEKER", size: 24.0, img: "https://via.placeholder.com/200x150?text=One+Piece+World+Seeker" },
-{ name: "OPERATION-FLASHPOINT-RED-RIVER", size: 4.56, img: "https://via.placeholder.com/200x150?text=Red+River" },
-{ name: "OUTLAST", size: 5.87, img: "https://via.placeholder.com/200x150?text=Outlast" },
-{ name: "OUTLAST 2", size: 25.0, img: "https://via.placeholder.com/200x150?text=Outlast+2" },
-{ name: "OVERCOOKED ALL YOU CAN EAT", size: 7.8, img: "https://via.placeholder.com/200x150?text=Overcooked+AYCE" },
-{ name: "PALWORLD", size: 20.6, img: "https://via.placeholder.com/200x150?text=Palworld" },
-{ name: "PAYDAY 2", size: 18.4, img: "https://via.placeholder.com/200x150?text=Payday+2" },
-{ name: "PERSONA 5 STRIKERS", size: 23.8, img: "https://via.placeholder.com/200x150?text=Persona+5+Strikers" },
-{ name: "PET SHOP SIMULATOR", size: 4.88, img: "https://via.placeholder.com/200x150?text=Pet+Shop+Sim" },
-{ name: "POLICE SIMULATOR PATROL OFFICERS", size: 12.4, img: "https://via.placeholder.com/200x150?text=Police+Sim" },
-{ name: "PROJECT ZOMBOID", size: 6.91, img: "https://via.placeholder.com/200x150?text=Project+Zomboid" },
-{ name: "PROTOTYPE", size: 7.85, img: "https://via.placeholder.com/200x150?text=Prototype" },
-{ name: "PROTOTYPE 2", size: 9.79, img: "https://via.placeholder.com/200x150?text=Prototype+2" },
-{ name: "READY OR NOT", size: 58.7, img: "https://via.placeholder.com/200x150?text=Ready+Or+Not" },
-{ name: "REAL BOXING", size: 1.53, img: "https://via.placeholder.com/200x150?text=Real+Boxing" },
-{ name: "RED ALERT 3 UPRISING", size: 14.2, img: "https://via.placeholder.com/200x150?text=RA3+Uprising" },
-{ name: "RED DEAD REDEMPTION + UNDEAD NIGHTMARE", size: 9.73, img: "https://via.placeholder.com/200x150?text=RDR+Undead" },
-{ name: "RED DEAD REDEMPTION 2", size: 119.0, img: "https://via.placeholder.com/200x150?text=RDR2" },
-{ name: "RESIDENT EVIL 2 REMAKE", size: 23.8, img: "https://via.placeholder.com/200x150?text=RE2+Remake" },
-{ name: "RESIDENT EVIL 3 NEMESIS", size: 0, img: "https://via.placeholder.com/200x150?text=RE3+Nemesis" }
-
+{ name: "NARUTO SHIPUUDEN ULTIMATE NINJA STORM 4", size: 38.9, img: "https://upload.wikimedia.org/wikipedia/en/5/54/NSUNS4_game_cover.png" },
+{ name: "NARUTO SHIPUUDEN ULTIMATE NINJA STORM 4 ROAD TO BORUTO NEXT GENERATION", size: 39.0, img: "https://store-images.s-microsoft.com/image/apps.25710.68860380104918599.e2ab3ddc-8806-445a-a2d6-608a353d211b.40cedb40-bd36-4965-afdf-b290f1e780ad" },
+{ name: "NARUTO X BORUTO ULTIMATE NINJA STORM CONNECTIONS", size: 29.7, img: "https://us-east-1-bandai.graphassets.com/AXzioIclSWilEjFtsMJPwz/zmWeTkFXR7iWwLlNv45o" },
+{ name: "NBA 2K14", size: 7.21, img: "https://phcorner.org/attachments/nba-2k14-cover-webp.1409369/" },
+{ name: "NBA 2K16", size: 42.4, img: "https://www.cheatcc.com/wp-content/uploads/2023/05/nba2k16review_boxart.jpg" },
+{ name: "NBA 2K25 (MODDED FROM 2K23)", size: 144, img: "https://upload.wikimedia.org/wikipedia/en/thumb/2/2f/NBA_2K25_cover_art.jpg/250px-NBA_2K25_cover_art.jpg" },
+{ name: "NEED FOR SPEED CARBON", size: 5.11, img: "https://w0.peakpx.com/wallpaper/801/770/HD-wallpaper-need-4-speed-carbon-evo-mitsubishi-mitsubishi-evo-ix-need4speed-need4speedcarbon-needforspeed-nfs-nfscarbon-ubc.jpg" },
+{ name: "NEED FOR SPEED HEAT DELUXE EDITION", size: 30.2, img: "https://static.wikia.nocookie.net/nfs/images/7/72/NFSHE_Deluxe_Boxart.png/revision/latest/thumbnail/width/360/height/360?cb=20190814194032&path-prefix=en" },
+{ name: "NEED FOR SPEED MOST WANTED (2005)", size: 2.78, img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Need_for_Speed_Most_Wanted_Box_Art.jpg/250px-Need_for_Speed_Most_Wanted_Box_Art.jpg" },
+{ name: "NEED FOR SPEED MOST WANTED (2012)", size: 6.32, img: "https://upload.wikimedia.org/wikipedia/en/b/b0/Nfs-most-wanted-2012-gen-packart.jpg" },
+{ name: "NEED FOR SPEED PAYBACK", size: 27, img: "https://upload.wikimedia.org/wikipedia/en/6/64/Need_for_Speed_Payback_standard_edition_cover_art.jpg" },
+{ name: "NEED FOR SPEED PRO STREET", size: 9.57, img: "https://upload.wikimedia.org/wikipedia/en/1/16/NFS_ProStreet_cover.png" },
+{ name: "NEED FOR SPEED UNDERCOVER", size: 5.9, img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d2/Need_for_Speed_Undercover_cover.jpg/250px-Need_for_Speed_Undercover_cover.jpg" },
+{ name: "NEED FOR SPEED UNDERGROUND 2", size: 2.91, img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Nfsu2-win-cover.jpg/250px-Nfsu2-win-cover.jpg" },
+{ name: "NINJA GAIDEN 2 BLACK", size: 81.1, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNCuYBmuFuri3mwtFTdFqTP7ThZYTPZmnopw&s" },
+{ name: "NO MANS SKY", size: 18.9, img: "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg" },
+{ name: "ONE PIECE PIRATE WARRIORS 3 GOLD EDITION", size: 11.4, img: "https://cdn11.bigcommerce.com/s-k0hjo2yyrq/images/stencil/1280x1280/products/1226/1283/One_Piece_Pirate_Warriors_3_Gold_Edition_Packshot__58977.1726658252.jpg?c=1" },
+{ name: "ONE PIECE PIRATE WARRIORS 4 ULTIMATE EDITION", size: 26.6, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co73ta.jpg" },
+{ name: "ONE PIECE UNLIMITED WORLD RED - DELUXE EDITION", size: 11.7, img: "https://upload.wikimedia.org/wikipedia/en/0/0f/One_Piece_Unlimited_World_RED_cover_art.jpeg" },
+{ name: "ONE PIECE WORLD SEEKER", size: 24.0, img: "https://upload.wikimedia.org/wikipedia/en/b/b9/One_Piece_World_Seeker_cover.jpg" },
+{ name: "OUTLAST", size: 5.87, img: "https://upload.wikimedia.org/wikipedia/en/a/aa/Outlast_cover.jpg" },
+{ name: "OUTLAST 2", size: 25.0, img: "https://www.gamezawy.com/wp-content/uploads/2022/07/outlast2-jpg.webp" },
+{ name: "OVERCOOKED ALL YOU CAN EAT", size: 7.8, img: "https://m.media-amazon.com/images/M/MV5BMDJlY2M0Y2ItZTNjOC00MTczLTk1NmMtMGM0MTc2ZGM2NGM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+{ name: "PALWORLD", size: 29.3, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/Palworld_Steam_artwork.jpg" },
+{ name: "PAYDAY 2", size: 18.4, img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Payday2cover.jpg" },
+{ name: "PERSONA 5 STRIKERS", size: 23.8, img: "https://upload.wikimedia.org/wikipedia/en/6/6e/Persona_5_Scramble.jpg" },
+{ name: "PET SHOP SIMULATOR", size: 4.88, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co82bw.jpg" },
+{ name: "POLICE SIMULATOR PATROL OFFICERS", size: 12.4, img: "https://cdn.technobezz.com/games/games/cover/police-simulator-patrol-officers/police-simulator-patrol-officers-cover-gamebezz-com.jpg" },
+{ name: "PROJECT ZOMBOID", size: 6.91, img: "https://m.media-amazon.com/images/M/MV5BNTA5ZDJkMzAtZGZkZC00MDk3LTkyZTktZTBjZjZiZDZmZjAxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+{ name: "PROTOTYPE", size: 7.85, img: "https://upload.wikimedia.org/wikipedia/en/b/b2/PROTOTYPE.png" },
+{ name: "PROTOTYPE 2", size: 9.79, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/Prototype_2_game.jpg" },
+{ name: "READY OR NOT", size: 58.7, img: "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/da9f50007c771345aba1636b0e3aa47e3210fa36991b36f7.jpg" },
+{ name: "REAL BOXING", size: 1.53, img: "https://store-images.s-microsoft.com/image/apps.49258.13510798886623386.c7ed3c21-fa92-4f38-acee-aed027575fe6.5ee74f43-6a26-4741-8298-8cc2e75bbcf4" },
+{ name: "RED ALERT 3", size: 14.2, img: "https://upload.wikimedia.org/wikipedia/en/9/9b/Command_%26_Conquer_Red_Alert_3_Game_Cover.jpg" },
+{ name: "RED DEAD REDEMPTION + UNDEAD NIGHTMARE", size: 9.73, img: "https://media.rockstargames.com/rockstargames/img/global/news/upload/reddeadredemption_undeadnightmare_art.png" },
+{ name: "RED DEAD REDEMPTION 2", size: 119.0, img: "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" },
+{ name: "RESIDENT EVIL 2 REMAKE", size: 23.8, img: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Resident_Evil_2_Remake.jpg/250px-Resident_Evil_2_Remake.jpg" },
+{ name: "RESIDENT EVIL 3 REMAKE", size: 23.8, img: "https://upload.wikimedia.org/wikipedia/en/d/dc/Resident_Evil_3.jpg" },
+{ name: "RESIDENT EVIL 4", size: 11.7, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg" },
+{ name: "RESIDENT EVIL 4 REMAKE", size: 57.5, img: "https://upload.wikimedia.org/wikipedia/en/d/df/Resident_Evil_4_remake_cover_art.jpg" },
+{ name: "RESIDENT EVIL 5 GOLD EDITION", size: 8.45, img: "https://cdn.mobygames.com/covers/2256913-resident-evil-5-gold-edition-xbox-one-front-cover.png" },
+{ name: "RESIDENT EVIL 6", size: 12.5, img: "https://preview.redd.it/epzoksw9hmu61.jpg?width=640&crop=smart&auto=webp&s=b365452e4a8ab9f75cdf0bab3f60542d1983119d" },
+{ name: "RESIDENT EVIL 7 BIOHAZARD", size: 22.9, img: "https://upload.wikimedia.org/wikipedia/en/f/fd/Resident_Evil_7_cover_art.jpg" },
+{ name: "RESIDENT EVIL HD", size: 11.8, img: "https://m.media-amazon.com/images/M/MV5BNTEzMjY4OTAtMDI2Yy00NjFmLTg5NTQtZmQxODYxMTA4ODY2XkEyXkFqcGc@._V1_.jpg" },
+{ name: "RESIDENT EVIL OPERATION RACOON CITY", size: 9.82, img: "https://upload.wikimedia.org/wikipedia/en/5/52/OperationRaccoonCity.jpg" },
+{ name: "RESIDENT EVIL VILLAGE", size: 36.6, img: "https://upload.wikimedia.org/wikipedia/en/2/2c/Resident_Evil_Village.png" },
+{ name: "RIDE 5", size: 43.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpa4tLgNYBOgYiRaxsR5jJWP5Sek_O4ibRaQ&s" },
+{ name: "RISE OF THE RONIN", size: 149, img: "https://upload.wikimedia.org/wikipedia/en/b/bf/Rise_of_the_Ronin_Key_Art.jpg" },
+{ name: "RISE OF THE TOMB RAIDER", size: 35.9, img: "https://upload.wikimedia.org/wikipedia/en/2/29/Rise_of_the_Tomb_Raider.jpg" },
+{ name: "ROADCRAFT", size: 48.4, img: "https://upload.wikimedia.org/wikipedia/en/3/3e/Roadcraft_cover_art.jpeg" },
+{ name: "RUNE FACTORY GUARDIANS OF AZUMA", size: 13.0, img: "https://upload.wikimedia.org/wikipedia/en/a/ad/Rune_Factory_-_Guardians_of_Azuma_Steam_artwork.jpg" },
+{ name: "RYSE SON OF ROME", size: 25.8, img: "https://upload.wikimedia.org/wikipedia/en/c/c5/Ryse_box_art.jpg" },
+{ name: "SCHEDULE I", size: 6.82, img: "https://assets-prd.ignimgs.com/2025/03/25/schedulei-1742876870079.jpg" },
+{ name: "SEKIRO SHADOWS DIE TWICE", size: 13.9, img: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Sekiro_art.jpg/250px-Sekiro_art.jpg" },
+{ name: "SHADOW OF THE TOMB RAIDER CROFT EDITION", size: 35.4, img: "https://cdn.gameboost.com/igdb/covers/99122/co3he9.jpg" },
+{ name: "SID MIERS CIVILIZATION IV THE COMPLETE EDITION", size: 0, img: "https://via.placeholder.com/200x150?text=CIV+IV+COMPLETE" },
+{ name: "SILENT HILL 2 REMAKE", size: 34.7, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Silent_Hill_2_remake_cover.jpg/250px-Silent_Hill_2_remake_cover.jpg" },
+{ name: "SILENT HILL 3", size: 5.07, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sh3_boxart.jpg/250px-Sh3_boxart.jpg" },
+{ name: "SILENT HILL 4 NEW EDITION", size: 3.63, img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Silent2002.jpg/250px-Silent2002.jpg" },
+{ name: "SILENT HILL HOMECOMING", size: 8.18, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_Homecoming.jpg" },
+{ name: "SIM CITY", size: 2.89, img: "https://upload.wikimedia.org/wikipedia/en/5/5f/SimCity_2013_Limited_Edition_cover.png" },
+{ name: "SLEEPING DOGS DEFINITIVE EDITION", size: 16.5, img: "https://store-images.s-microsoft.com/image/apps.27657.69516029925336975.e3cb0155-71cd-4799-bed4-63da86cce109.61267421-c294-418d-98ad-81f696989b4f" },
+{ name: "SNIPER ELITE 2 V2 REMASTERED", size: 13.0, img: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/73206bd9-257c-4f50-b1f3-59a306e24084/dfq96c9-ca900fe0-f8c1-4534-80c8-eca681979583.png/v1/fill/w_512,h_512/sniper_elite_v2_remastered_icon_ico_by_hatemtiger_dfq96c9-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTEyIiwicGF0aCI6IlwvZlwvNzMyMDZiZDktMjU3Yy00ZjUwLWIxZjMtNTlhMzA2ZTI0MDg0XC9kZnE5NmM5LWNhOTAwZmUwLWY4YzEtNDUzNC04MGM4LWVjYTY4MTk3OTU4My5wbmciLCJ3aWR0aCI6Ijw9NTEyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0._ziY_H2hfAVIZRIBls7rzo_gAYH731d8R4NndoXknc4" },
+{ name: "SNIPER ELITE 3", size: 18.6, img: "https://upload.wikimedia.org/wikipedia/en/a/a2/Sniper_Elite_III_cover_art.jpg" },
+{ name: "SNIPER ELITE 4", size: 53.0, img: "https://upload.wikimedia.org/wikipedia/en/9/90/Sniper_Elite_4_cover_art.jpg" },
+{ name: "SNIPER GHOST WARRIOR CONTRACTS", size: 12.6, img: "https://upload.wikimedia.org/wikipedia/en/7/75/SGWC_cover_art.jpg" },
+{ name: "SNIPER GHOST WARRIOR CONTRACTS 2 BUTCHER BANQUET", size: 14.3, img: "https://images.igdb.com/igdb/image/upload/t_1080p/co2nuh.jpg" },
+{ name: "SONIC UNLEASHED", size: 9.35, img: "https://upload.wikimedia.org/wikipedia/en/a/a0/Sonic_unleashed_boxart.jpg" },
+{ name: "SPLIT FICTION", size: 87.8, img: "https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Split_Fiction_cover_art.jpg/250px-Split_Fiction_cover_art.jpg" },
+{ name: "STARCRAFT REMASTERED", size: 5.60, img: "https://gamegator.net/_next/image?url=https%3A%2F%2Fimages.gamegator.net%2Fco3wal&w=640&q=75" },
+{ name: "STARFIELD", size: 116, img: "https://upload.wikimedia.org/wikipedia/en/6/6d/Bethesda_Starfield.jpg" },
+{ name: "STATE OF DECAY - YEAR-ONE SURVIVAL EDITION", size: 2.95, img: "https://m.media-amazon.com/images/I/71lcjHH7aiL._UF1000,1000_QL80_.jpg" },
+{ name: "STATE OF DECAY 2 JUGGERNAUT EDITION HOMECOMING", size: 19.5, img: "https://zamve.com/wp-content/uploads/2022/06/State-of-Decay-Juggernaut-Edition-pc-game-steam-key-from-zamve.com_.jpg" },
+{ name: "STRAY", size: 6.21, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Stray_cover_art.jpg" },
+{ name: "STREET FIGHTER V", size: 54.1, img: "https://upload.wikimedia.org/wikipedia/en/8/80/Street_Fighter_V_box_artwork.png" },
+{ name: "STREET FIGHTER X TEKKEN", size: 6.71, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/SF-X-Tekken_box_art.jpg" },
+{ name: "SUPERMARKET SIMULATOR", size: 4.26, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5opi.jpg" },
+{ name: "SWORD ART ONLINE FRACTURED DAYDREAM", size: 42.1, img: "https://image.api.playstation.com/vulcan/ap/rnd/202406/1105/e87038b4709a4cf6407aad1c23d57663a1d13c5fecffcfed.png" },
+{ name: "TEKKEN 8", size: 113, img: "https://upload.wikimedia.org/wikipedia/en/b/b4/Tekken_8_cover_art.jpg" },
+{ name: "TEKKEN 7 V5.10 INCL ALL DLC", size: 81, img: "https://upload.wikimedia.org/wikipedia/en/1/17/Official_Tekken_7_Logo.jpg" },
+{ name: "TERMINATOR SALVATION", size: 7, img: "https://upload.wikimedia.org/wikipedia/en/6/6b/Terminator_Salvation.jpg" },
+{ name: "THE AMAZING SPIDER MAN 2", size: 8.05, img: "https://upload.wikimedia.org/wikipedia/en/5/53/The_Amazing_Spider-Man_2_%282014_video_game%29_cover.png" },
+{ name: "THE ELDER SCROLLS 5 SKYRIM SPECIAL EDITION", size: 11.8, img: "https://i0.wp.com/techubiz.com/wp-content/uploads/2023/03/skyrim.jpg?fit=1000%2C1000&ssl=1" },
+{ name: "THE ELDER SCROLLS IV OBLIVION REMASTERED", size: 124, img: "https://upload.wikimedia.org/wikipedia/en/6/66/The_Elder_Scrolls_IV_Oblivion_Remastered_cover_art.webp" },
+{ name: "THE KING OF FIGHTERS XV", size: 43.3, img: "https://upload.wikimedia.org/wikipedia/en/d/df/KOF_XV.png" },
+{ name: "THE LAST OF US 1", size: 88.7, img: "https://m.media-amazon.com/images/M/MV5BMTE2MmQ3OTctZmExNi00ZTYxLTgzMGYtOTdlYjFjNzIxNWMxXkEyXkFqcGc@._V1_.jpg" },
+{ name: "THE LAST OF US PART II REMASTERED", size: 115, img: "https://cdn1.epicgames.com/offer/7713e3fa4b234e0d8f553044205d53b6/EGS_TheLastofUsPartIIRemastered_NaughtyDogLLCNixxesSoftwareIronGalaxy_S2_1200x1600-2e13755a6b3fec2ee9dbcc231a1cf39c" },
+{ name: "THE SIMS 4 (LIFE & DEATH EXPANSION COMPLETE)", size: 66.3, img: "https://static.wikia.nocookie.net/sims/images/6/6c/Sims_4_Life_and_Death_Boxart_1.png/revision/latest/scale-to-width-down/250?cb=20241003152150" },
+{ name: "THE WITCHER 2: ASSASIN OF KINGS ENHANCED EDITION", size: 19.7, img: "https://upload.wikimedia.org/wikipedia/en/4/40/Witcher_2_cover.jpg" },
+{ name: "THE WITCHER 3 WILD HUNT", size: 52.2, img: "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg" },
+{ name: "TOM CLANCY’S SPLINTER CELL BLACKLIST", size: 18.1, img: "https://upload.wikimedia.org/wikipedia/en/4/47/Tom_Clancy%27s_Splinter_Cell_Blacklist_box_art.png" },
+{ name: "TOM CLANCY’S SPLINTER CELL DOUBLE AGENT", size: 9.86, img: "https://upload.wikimedia.org/wikipedia/en/1/1e/Scda_boxart.jpg" },
+{ name: "TOM CLANCY'S GHOST RECON – WILDLANDS", size: 64.4, img: "https://upload.wikimedia.org/wikipedia/en/b/b9/Ghost_Recon_Wildlands_cover_art.jpg" },
+{ name: "TOM CLANCYS GHOST RECON FUTURE SOLDIER", size: 14.1, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Tom_Clancy_Ghost_Recon_Future_Soldier_Game_Cover.jpg" },
+{ name: "TOMB RAIDER DEFINITIVE EDITION", size: 24.1, img: "https://store-images.s-microsoft.com/image/apps.35283.68847167288522183.9fdea778-258f-40d6-9f9e-fab92915bc6d.98c2dd25-9180-49e5-bdd3-6bdb1d857889" },
+{ name: "TONY HAWKS PRO SKATER 3+4", size: 51.4, img: "https://upload.wikimedia.org/wikipedia/en/8/82/Tony_Hawk%27s_Pro_Skater_3_%2B_4_cover_art.png" },
+{ name: "TOTAL WAR ROME II EMPEROR EDITION", size: 33.4, img: "https://i.ebayimg.com/images/g/KGEAAOSwFnJgT5-7/s-l1200.jpg" },
+{ name: "TOTAL WAR ROME II RISE OF THE REPUBLIC", size: 33.3, img: "https://www.mmoga.com/images/games/_ext/1102937/total-war-rome-2-rise-of-the-republic-dlc_large.png" },
+{ name: "TRANSFORMERS - WAR FOR CYBERTRON", size: 8.27, img: "https://upload.wikimedia.org/wikipedia/en/6/63/War_for_Cybertron.jpg" },
+{ name: "ULTIMATE MARVEL VS. CAPCOM 3", size: 3.54, img: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/UMvC3_Cover.jpg/250px-UMvC3_Cover.jpg" },
+{ name: "UNCHARTED LEGACY OF THIEVES COLLECTION", size: 124, img: "https://owp.klarna.com/product/640x640/3007557856/Uncharted-Legacy-Of-Thieves-Collection-(PC).jpg?ph=true" },
+{ name: "UNRAVEL TWO", size: 6.76, img: "https://m.media-amazon.com/images/M/MV5BYzZmYzBhMjYtZjcyZC00NmJjLThlZmItMjM0NjU0NTk1YmMxXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" },
+{ name: "VIRTUA.FIGHTER.5.R.E.V.O", size: 21.5, img: "https://cdn.sega.co.uk/mhc-sega/public/styles/1280/public/content/media/images/raster/vf5revo_vertical_cover.jpg.webp?itok=2mZE2zf7" },
+{ name: "WARCRAFT III", size: 1.06, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
+{ name: "WARHAMMER 40000 SPACE MARINE 2", size: 64.7, img: "https://upload.wikimedia.org/wikipedia/en/4/42/Warhammer_40%2C000_Space_Marine_2_cover_art.jpg" },
+{ name: "WATCH DOGS", size: 16.4, img: "https://static.wikia.nocookie.net/watchdogscombined/images/1/16/Watch_Dogs_Box_Art.png/revision/latest/thumbnail/width/360/height/450?cb=20230403162557" },
+{ name: "WATCH DOGS 2", size: 47.3, img: "https://upload.wikimedia.org/wikipedia/en/thumb/b/b0/Watch_Dogs_2.jpg/250px-Watch_Dogs_2.jpg" },
+{ name: "WATCH DOGS LEGION", size: 110.0, img: "https://upload.wikimedia.org/wikipedia/en/d/dc/Watch_Dogs_Legion_cover_art.webp" },
+{ name: "WO LONG FALLEN DIGITAL DELUXE EDITION", size: 45.4, img: "https://cdn.xzone.cz/p/aaa/wo-long-fallen-dynasty-deluxe-edition/wo-long-fallen-dynasty-deluxe-edition-600w.png" },
+{ name: "WOLFENSTEIN THE NEW ORDER", size: 43.4, img: "https://upload.wikimedia.org/wikipedia/en/9/95/Wolfenstein_The_New_Order_cover.jpg" },
+{ name: "WORLD WAR Z AFTERMATH", size: 61.0, img: "https://cdn.technobezz.com/games/games/cover/world-war-z-aftermath/world-war-z-aftermath-cover-gamebezz-com.jpg" },
+{ name: "WUCHANG FALLEN FEATHERS ", size: 45.7, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Wuchang_Fallen_Feathers_cover_art.jpg" },
+{ name: "WWE 2K24", size: 85.4, img: "https://upload.wikimedia.org/wikipedia/en/c/c5/WWE_2K24_Standard_Cover.png" },
+{ name: "WWE 2K25", size: 90.5, img: "https://upload.wikimedia.org/wikipedia/en/5/53/WWE_2k25_cover.jpg" },
+{ name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" }
     ];
 
     let selected = [];
-
     function renderGames() {
       const query = document.getElementById("searchInput").value.toLowerCase();
       const container = document.getElementById("gameList");
       container.innerHTML = "";
       games.forEach((game, index) => {
         if (!game.name.toLowerCase().includes(query)) return;
-
         const div = document.createElement("div");
         div.className = "game-card";
         if (selected.includes(index)) div.classList.add("selected");
-        div.innerHTML = `
-          <img src="${game.img}" alt="${game.name}" />
-          <p>${game.name}</p>
-          <p>${game.size} GB</p>
-        `;
+        div.innerHTML = `<img src="${game.img}" alt="${game.name}" /><p>${game.name}</p><p>${game.size} GB</p>`;
         div.addEventListener("click", () => {
           const i = selected.indexOf(index);
           if (i > -1) {
@@ -419,14 +370,12 @@
       const totalDisplay = document.getElementById("totalSize");
       const miniTotal = document.getElementById("miniTotalSize");
       const warning = document.getElementById("warning");
-
       list.innerHTML = "";
       let total = 0;
       selected.forEach(i => {
         const game = games[i];
         const li = document.createElement("li");
-        li.innerHTML = `${game.name} - ${game.size} GB 
-          <button onclick="removeGame(${i})">Remove</button>`;
+        li.innerHTML = `${game.name} - ${game.size} GB <button onclick="removeGame(${i})">Remove</button>`;
         list.appendChild(li);
         total += game.size;
       });
@@ -461,13 +410,10 @@
       }
     }
 
-    // Make panel draggable
-    dragElement(document.getElementById("rightPanel"));
-    function dragElement(elmnt) {
-      const header = elmnt.querySelector(".browser-header");
+    dragElement(document.getElementById("rightPanel"), document.getElementById("dragHeader"));
+    function dragElement(elmnt, dragHandle) {
       let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-      if (header) header.onmousedown = dragMouseDown;
-
+      dragHandle.onmousedown = dragMouseDown;
       function dragMouseDown(e) {
         e.preventDefault();
         pos3 = e.clientX;
@@ -475,7 +421,6 @@
         document.onmouseup = closeDragElement;
         document.onmousemove = elementDrag;
       }
-
       function elementDrag(e) {
         e.preventDefault();
         pos1 = pos3 - e.clientX;
@@ -484,8 +429,8 @@
         pos4 = e.clientY;
         elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
         elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+        elmnt.style.bottom = "auto";
       }
-
       function closeDragElement() {
         document.onmouseup = null;
         document.onmousemove = null;
