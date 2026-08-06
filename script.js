@@ -662,7 +662,7 @@ const allGames = [
 
 { name: "TOM CLANCY’S SPLINTER CELL DOUBLE AGENT", genre: ["Stealth","Action"], size: 9.86, img: "https://upload.wikimedia.org/wikipedia/en/1/1e/Scda_boxart.jpg" },
 
-{ name: "TOM CLANCY'S GHOST RECON WILDLANDS WITH DLC", genre: ["TPS","Open World"], size: 86, img: "https://upload.wikimedia.org/wikipedia/en/b/b9/Ghost_Recon_Wildlands_cover_art.jpg" },
+{ name: "TOM CLANCY'S GHOST RECON WILDLANDS WITH DLC", genre: ["TPS","Open World"], size: 87, img: "https://upload.wikimedia.org/wikipedia/en/b/b9/Ghost_Recon_Wildlands_cover_art.jpg" },
 
 { name: "TOM CLANCYS GHOST RECON FUTURE SOLDIER", genre: ["TPS","Tactical"], size: 14.1, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Tom_Clancy_Ghost_Recon_Future_Soldier_Game_Cover.jpg" },
 
