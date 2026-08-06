@@ -180,7 +180,7 @@ const allGames = [
 
 { name: "CRASH BANDICOOT 4", genre: ["Platformer", "Adventure"], size: 23.3, img: "https://upload.wikimedia.org/wikipedia/en/3/39/Crash_Bandicoot_4_Box_Art.jpeg" },
 
-{ name: "CRIMSON DESERT DELUXE EDITION ", genre: ["Action", "RPG", "Open World"], size: 131, img: "https://cdn.loaded.com/500x706/media/catalog/product/c/r/crimson_desert_deluxe_edition_pre-order_bonus_1.png" },
+{ name: "CRIMSON DESERT DELUXE EDITION ", genre: ["Action", "RPG", "Open World"], size: 131, img: "https://upload.wikimedia.org/wikipedia/en/7/73/Crimson_Desert_Steam_Cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" },
 
 { name: "CRYSIS 3 REMASTERED", genre: ["FPS", "Action"], size: 18.0, img: "https://store-images.s-microsoft.com/image/apps.47687.14224226440896945.9b286b99-0293-4c31-9568-1be6d21203a4.337618c2-8e74-4e4f-9881-87bf6a2d2067" },
 
