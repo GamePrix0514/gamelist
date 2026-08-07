@@ -62,6 +62,8 @@ const allGames = [
 
 { name: "ATTACK ON TITAN 2", genre: ["Action", "Adventure"], size: 25, img: "https://www.mmoga.com/images/games/_ext/1288947/attack-on-titan-2_large.png" },
 
+{ name: "AVATAR FRONTIERS OF PANDORA ", genre: ["Action", "Open World"], size: 125, img: "https://upload.wikimedia.org/wikipedia/en/5/53/Avatar_Frontiers_of_Pandora_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" },
+
 { name: "AVOWED", genre: ["Action", "RPG"], size: 74, img: "https://upload.wikimedia.org/wikipedia/en/4/4d/Avowed_key_art.jpeg" },
 
 { name: "BACK FOR BLOOD", genre: ["Action", "Horror"], size: 47, img: "https://upload.wikimedia.org/wikipedia/en/6/60/Back_4_Blood_cover_art.jpg" },
@@ -95,6 +97,8 @@ const allGames = [
 { name: "BATTLEFIELD 6", genre: ["Action", "FPS"], size: 102, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Battlefield_6_cover_art.jpg" },
 
 { name: "BATTLEFIELD HARDLINE", genre: ["Action", "FPS"], size: 39, img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/aa/Battlefield_Hardline.jpg/250px-Battlefield_Hardline.jpg" },
+
+{ name: "BEAST OF REINCARNATION ", genre: ["Action RPG", "Open World"], size: 32, img: "https://upload.wikimedia.org/wikipedia/en/8/8f/Beast_of_Reincarnation_cover_artwork.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "BIG RUMBLE BOXING CREED CHAMPIONS", genre: ["Sports"], size: 8, img: "https://cdn.cdkeys.com/496x700/media/catalog/product/b/i/big_rumble_boxing__creed_champions_pc.jpg" },
 
@@ -282,7 +286,7 @@ const allGames = [
 
 { name: "FINAL FANTASY XIII", genre: ["RPG", "Fantasy"], size: 57.6, img: "https://upload.wikimedia.org/wikipedia/en/4/47/Final_Fantasy_XIII_EU_box_art.jpg" },
 
-{ name: "FINAL FANTASY XV WINDOWS EDITION", genre: ["RPG", "Fantasy"], size: 98, img: "https://static.driffle.com/fit-in/720x512/media-gallery/prod/166937787623599000_final-fantasy-xv-we.webp" },
+{ name: "FINAL FANTASY XV WINDOWS EDITION", genre: ["RPG", "Fantasy"], size: 84, img: "https://static.driffle.com/fit-in/720x512/media-gallery/prod/166937787623599000_final-fantasy-xv-we.webp" },
 
 { name: "FINAL FANTASY XVI", genre: ["RPG", "Fantasy"], size: 156.0, img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Final_Fantasy_XVI_cover_art.png/250px-Final_Fantasy_XVI_cover_art.png" },
 
@@ -890,8 +894,6 @@ const lowEndGames = [
 
 { name: "SILENT HILL 4 NEW EDITION", genre: ["Horror","Survival"], size: 3.63, img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Silent2002.jpg/250px-Silent2002.jpg" },
 
-{ name: "SILENT HILL F", genre: ["Horror","Survival"], size: 47.9, img: "https://img.game8.co/4130881/2b19ba68655d60ad2879409fdc168678.png/show" },
-
 { name: "SILENT HILL HOMECOMING", genre: ["Horror","Survival"], size: 8.18, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_Homecoming.jpg" },
 
 { name: "SLEEPING DOGS DEFINITIVE EDITION", genre: ["Action","Open World"], size: 16.5, img: "https://store-images.s-microsoft.com/image/apps.27657.69516029925336975.e3cb0155-71cd-4799-bed4-63da86cce109.61267421-c294-418d-98ad-81f696989b4f" },
@@ -921,7 +923,6 @@ const lowEndGames = [
 { name: "TOM CLANCYS GHOST RECON FUTURE SOLDIER", genre: ["TPS","Tactical"], size: 14.1, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Tom_Clancy_Ghost_Recon_Future_Soldier_Game_Cover.jpg" },
 
 { name: "TOM CLANCYS SPLINTER CELL CONVICTION", genre: ["Stealth","Action"], size: 6.91, img: "https://upload.wikimedia.org/wikipedia/en/7/7f/Tom_Clancy%27s_Splinter_Cell_Conviction.jpg" },
-
 
 { name: "TOTAL WAR ROME II EMPEROR EDITION", genre: ["Strategy","RTS"], size: 33.4, img: "https://i.ebayimg.com/images/g/KGEAAOSwFnJgT5-7/s-l1200.jpg" },
 
