@@ -494,7 +494,7 @@ const allGames = [
 
 { name: "PALWORLD", genre: ["Survival","Open World"], size: 39, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/Palworld_Steam_artwork.jpg" },
 
-{ name: "PAYDAY 2", genre: ["FPS","Co-op"], size: 18.4, img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Payday2cover.jpg" },
+{ name: "PAYDAY 2", genre: ["FPS","Co-op"], size: 88, img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Payday2cover.jpg" },
 
 { name: "PERSONA 5 STRIKERS", genre: ["RPG","Action"], size: 23.8, img: "https://upload.wikimedia.org/wikipedia/en/6/6e/Persona_5_Scramble.jpg" },
 
@@ -700,7 +700,7 @@ const allGames = [
 
 { name: "VIRTUA.FIGHTER.5.R.E.V.O", genre: ["Fighting"], size: 21.5, img: "https://cdn.sega.co.uk/mhc-sega/public/styles/1280/public/content/media/images/raster/vf5revo_vertical_cover.jpg.webp?itok=2mZE2zf7" },
 
-{ name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 1.06, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
+{ name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
 
 { name: "WARHAMMER 40,000: MECHANICUS II", genre: ["Strategy","Turn-Based"], size: 19, img: "https://upload.wikimedia.org/wikipedia/en/1/1e/Warhammer_40%2C000_Mechanicus_II.png" },
 
@@ -870,7 +870,7 @@ const lowEndGames = [
 
 { name: "OPERATION FLASHPOINT RED RIVER", genre: ["FPS","Military"], size: 4.56, img: "https://upload.wikimedia.org/wikipedia/en/5/52/Operation_Flashpoint_Red_River_Game_Cover.jpg" },
 
-{ name: "PAYDAY 2", genre: ["FPS","Co-op"], size: 18.4, img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Payday2cover.jpg" },
+{ name: "PAYDAY 2", genre: ["FPS","Co-op"], size: 88, img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Payday2cover.jpg" },
 
 { name: "PLANTS VS ZOMBIES", genre: ["Strategy","Tower Defense"], size: 0.0831, img: "https://upload.wikimedia.org/wikipedia/en/9/9c/PlantsvsZombiesCoverArt.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
@@ -934,7 +934,7 @@ const lowEndGames = [
 
 { name: "ULTIMATE MARVEL VS. CAPCOM 3", genre: ["Fighting","Superhero"], size: 4, img: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6d/UMvC3_Cover.jpg/250px-UMvC3_Cover.jpg" },
 
-{ name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 1.06, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
+{ name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
 
