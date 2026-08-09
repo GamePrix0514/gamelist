@@ -406,7 +406,7 @@ const allGames = [
 
 { name: "MEDAL OF HONOR", genre: ["FPS","War"], size: 4.84, img: "https://upload.wikimedia.org/wikipedia/en/b/ba/Medal_of_Honor_2010_Box_art.jpg" },
 
-{ name: "MEDAL OF HONOR AIRBORNE", genre: ["FPS","War"], size: 3.94, img: "https://upload.wikimedia.org/wikipedia/en/f/fa/MoH_Airborne_cover_PC_DVD.jpg" },
+{ name: "MEDAL OF HONOR AIRBORNE", genre: ["FPS","War"], size: 11, img: "https://upload.wikimedia.org/wikipedia/en/f/fa/MoH_Airborne_cover_PC_DVD.jpg" },
 
 { name: "MEDAL OF HONOR ALLIED ASSAULT WAR CHEST", genre: ["FPS","War"], size: 2.52, img: "https://media.s-bol.com/BRXgyk44ABko/N91wNL2/550x783.jpg" },
 
@@ -838,7 +838,7 @@ const lowEndGames = [
 
 { name: "MEDAL OF HONOR", genre: ["FPS","War"], size: 4.84, img: "https://upload.wikimedia.org/wikipedia/en/b/ba/Medal_of_Honor_2010_Box_art.jpg" },
 
-{ name: "MEDAL OF HONOR AIRBORNE", genre: ["FPS","War"], size: 3.94, img: "https://upload.wikimedia.org/wikipedia/en/f/fa/MoH_Airborne_cover_PC_DVD.jpg" },
+{ name: "MEDAL OF HONOR AIRBORNE", genre: ["FPS","War"], size: 11, img: "https://upload.wikimedia.org/wikipedia/en/f/fa/MoH_Airborne_cover_PC_DVD.jpg" },
 
 { name: "MEDAL OF HONOR ALLIED ASSAULT WAR CHEST", genre: ["FPS","War"], size: 2.52, img: "https://media.s-bol.com/BRXgyk44ABko/N91wNL2/550x783.jpg" },
 
