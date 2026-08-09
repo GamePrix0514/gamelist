@@ -128,9 +128,9 @@ const allGames = [
 
 { name: "CALL OF DUTY MODERN WARFARE III (2023)", size: 53, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/f/f6/MWIII_Cover_Art.png" },
 
-{ name: "CALL OF DUTY 2", size: 3.45, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Call_of_Duty_2_Box.jpg/250px-Call_of_Duty_2_Box.jpg" },
+{ name: "CALL OF DUTY 2", size: 4, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Call_of_Duty_2_Box.jpg/250px-Call_of_Duty_2_Box.jpg" },
 
-{ name: "CALL OF DUTY 5 WORLD AT WAR", size: 6.73, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/6/69/WAW_Cover_Art.jpg" },
+{ name: "CALL OF DUTY 5 WORLD AT WAR", size: 7, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/6/69/WAW_Cover_Art.jpg" },
 
 { name: "CALL OF DUTY ADVANCED WARFARE", size: 43.8, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/3/3b/Advanced_Warfare.jpg" },
 
@@ -284,7 +284,7 @@ const allGames = [
 
 { name: "FINAL FANTASY VII REBIRTH", genre: ["RPG", "Fantasy"], size: 153, img: "https://upload.wikimedia.org/wikipedia/en/7/75/Boxart_for_Final_Fantasy_VII_Rebirth.png" },
 
-{ name: "FINAL FANTASY XIII", genre: ["RPG", "Fantasy"], size: 57.6, img: "https://upload.wikimedia.org/wikipedia/en/4/47/Final_Fantasy_XIII_EU_box_art.jpg" },
+{ name: "FINAL FANTASY XIII", genre: ["RPG", "Fantasy"], size: 58, img: "https://upload.wikimedia.org/wikipedia/en/4/47/Final_Fantasy_XIII_EU_box_art.jpg" },
 
 { name: "FINAL FANTASY XV WINDOWS EDITION", genre: ["RPG", "Fantasy"], size: 84, img: "https://static.driffle.com/fit-in/720x512/media-gallery/prod/166937787623599000_final-fantasy-xv-we.webp" },
 
@@ -654,7 +654,7 @@ const allGames = [
 
 { name: "THE LORD OF THE RINGS WAR IN THE NORTH", genre: ["Action","RPG"], size: 7.08, img: "https://upload.wikimedia.org/wikipedia/en/c/c2/LOTR_War_in_the_North.png" },
 
-{ name: "THE SIMS 4 (LIFE & DEATH EXPANSION COMPLETE)", genre: ["Simulation","Life"], size: 66.3, img: "https://static.electronicfirst.com/products/thumbnail_1748502161_683806915ce7a.webp" },
+{ name: "THE SIMS 4", genre: ["Simulation","Life"], size: 67, img: "https://static.electronicfirst.com/products/thumbnail_1748502161_683806915ce7a.webp" },
 
 { name: "THE WITCHER 2: ASSASIN OF KINGS ENHANCED EDITION", genre: ["RPG","Fantasy"], size: 19.7, img: "https://upload.wikimedia.org/wikipedia/en/4/40/Witcher_2_cover.jpg" },
 
@@ -764,9 +764,9 @@ const lowEndGames = [
 
 { name: "BULLY SCHOLARSHIP EDITION", size: 4.83, genre: ["Action","Adventure"], img: "https://gamegator.net/_next/image?url=https%3A%2F%2Fimages.gamegator.net%2Fco2gvl&w=384&q=75" },
 
-{ name: "CALL OF DUTY 2", size: 3.45, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Call_of_Duty_2_Box.jpg/250px-Call_of_Duty_2_Box.jpg" },
+{ name: "CALL OF DUTY 2", size: 4, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Call_of_Duty_2_Box.jpg/250px-Call_of_Duty_2_Box.jpg" },
 
-{ name: "CALL OF DUTY 5 WORLD AT WAR", size: 6.73, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/6/69/WAW_Cover_Art.jpg" },
+{ name: "CALL OF DUTY 5 WORLD AT WAR", size: 7, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/6/69/WAW_Cover_Art.jpg" },
 
 { name: "CALL OF DUTY BLACK OPS", size: 11.2, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/250px-CoD_Black_Ops_cover.png" },
 
@@ -912,7 +912,7 @@ const lowEndGames = [
 
 { name: "THE LORD OF THE RINGS WAR IN THE NORTH", genre: ["Action","RPG"], size: 7.08, img: "https://upload.wikimedia.org/wikipedia/en/c/c2/LOTR_War_in_the_North.png" },
 
-{ name: "THE SIMS 4 (LIFE & DEATH EXPANSION COMPLETE)", genre: ["Simulation","Life"], size: 66.3, img: "https://static.electronicfirst.com/products/thumbnail_1748502161_683806915ce7a.webp" },
+{ name: "THE SIMS 4", genre: ["Simulation","Life"], size: 67, img: "https://static.electronicfirst.com/products/thumbnail_1748502161_683806915ce7a.webp" },
 
 { name: "THE WITCHER 2: ASSASIN OF KINGS ENHANCED EDITION", genre: ["RPG","Fantasy"], size: 19.7, img: "https://upload.wikimedia.org/wikipedia/en/4/40/Witcher_2_cover.jpg" },
 
