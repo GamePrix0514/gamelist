@@ -136,7 +136,7 @@ const allGames = [
 
 { name: "CALL OF DUTY BLACK OPS", size: 11.2, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/02/CoD_Black_Ops_cover.png/250px-CoD_Black_Ops_cover.png" },
 
-{ name: "CALL OF DUTY BLACK OPS 6 CAMPAIGN ONLY", size: 48, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/c/c9/Call_of_Duty_Black_Ops_6_Key_Art.png" },
+{ name: "CALL OF DUTY BLACK OPS 6 CAMPAIGN ONLY", size: 49, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/c/c9/Call_of_Duty_Black_Ops_6_Key_Art.png" },
 
 { name: "CALL OF DUTY - BLACK OPS 2", size: 22.2, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Call_of_Duty_Black_Ops_II_box_artwork.png/250px-Call_of_Duty_Black_Ops_II_box_artwork.png" },
 
@@ -290,7 +290,7 @@ const allGames = [
 
 { name: "FINAL FANTASY XVI", genre: ["RPG", "Fantasy"], size: 156.0, img: "https://upload.wikimedia.org/wikipedia/en/thumb/0/00/Final_Fantasy_XVI_cover_art.png/250px-Final_Fantasy_XVI_cover_art.png" },
 
-{ name: "FIVE NIGHTS AT FREDDY'S 4", genre: ["Horror"], size: 0.993, img: "https://newzoo.com/wp-content/uploads/api/games/artworks/game--five-nights-at-freddys-4.jpg" },
+{ name: "FIVE NIGHTS AT FREDDY'S 4", genre: ["Horror"], size: 1.04, img: "https://newzoo.com/wp-content/uploads/api/games/artworks/game--five-nights-at-freddys-4.jpg" },
 
 { name: "FORZA HORIZON 5", genre: ["Racing"], size: 133.0, img: "https://upload.wikimedia.org/wikipedia/en/8/86/Forza_Horizon_5_cover_art.jpg" },
 
@@ -574,7 +574,7 @@ const allGames = [
 
 { name: "SIFU", genre: ["Action","Martial Arts"], size: 31, img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1754555101" },
 
-{ name: "SILENT HILL 2 REMAKE", genre: ["Horror","Survival"], size: 34.7, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Silent_Hill_2_remake_cover.jpg/250px-Silent_Hill_2_remake_cover.jpg" },
+{ name: "SILENT HILL 2 REMAKE", genre: ["Horror","Survival"], size: 35, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/c1/Silent_Hill_2_remake_cover.jpg/250px-Silent_Hill_2_remake_cover.jpg" },
 
 { name: "SILENT HILL 3", genre: ["Horror","Survival"], size: 5.07, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sh3_boxart.jpg/250px-Sh3_boxart.jpg" },
 
@@ -618,7 +618,7 @@ const allGames = [
 
 { name: "STORY OF SEASONS GRAND BAZAAR", genre: ["Simulation","Farming"], size: 7.67, img: "https://cdn.dekudeals.com/images/e686894cb7a726dacc9ddcbef0b1ec1c33d80f47/w500.jpg" },
 
-{ name: "STRAY", genre: ["Adventure","Puzzle"], size: 6.21, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Stray_cover_art.jpg" },
+{ name: "STRAY", genre: ["Adventure","Puzzle"], size: 7, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Stray_cover_art.jpg" },
 
 { name: "STREET FIGHTER V", genre: ["Fighting"], size: 54.1, img: "https://upload.wikimedia.org/wikipedia/en/8/80/Street_Fighter_V_box_artwork.png" },
 
@@ -712,7 +712,7 @@ const allGames = [
 
 { name: "WATCH DOGS LEGION", genre: ["Action","Open World"], size: 110.0, img: "https://upload.wikimedia.org/wikipedia/en/d/dc/Watch_Dogs_Legion_cover_art.webp" },
 
-{ name: "WO LONG FALLEN DIGITAL DELUXE EDITION", genre: ["Action","Soulslike"], size: 45.4, img: "https://upload.wikimedia.org/wikipedia/en/c/c6/Wo_Long_Fallen_Dynasty_cover.jpeg" },
+{ name: "WO LONG FALLEN DYNASTY", genre: ["Action","Soulslike"], size: 60, img: "https://upload.wikimedia.org/wikipedia/en/c/c6/Wo_Long_Fallen_Dynasty_cover.jpeg" },
 
 { name: "WOLFENSTEIN THE NEW ORDER", genre: ["FPS","Action"], size: 43.4, img: "https://upload.wikimedia.org/wikipedia/en/9/95/Wolfenstein_The_New_Order_cover.jpg" },
 
