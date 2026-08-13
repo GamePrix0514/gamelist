@@ -1,7 +1,7 @@
 const DRIVE_OPTIONS = {
   "500": {label:"500GB", usable:460},
   "1000": {label:"1TB", usable:920},
-  "2000": {label:"2TB", usable:1850}
+  "2000": {label:"2TB", usable:1800}
 };
 let driveKey = "2000";
 let DRIVE_CAPACITY = DRIVE_OPTIONS[driveKey].usable;
