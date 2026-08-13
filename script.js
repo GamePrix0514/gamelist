@@ -1,12 +1,17 @@
-// =========================
-// GAMEPRIX V2
-// =========================
+const DRIVE_OPTIONS = {
+  "500": {label:"500GB", usable:460},
+  "1000": {label:"1TB", usable:920},
+  "2000": {label:"2TB", usable:1850}
+};
+let driveKey = "2000";
+let DRIVE_CAPACITY = DRIVE_OPTIONS[driveKey].usable;
+const MESSENGER_URL = "https://m.me/YOUR_GAMEPRIX_PAGE";
+
 
 const allGames = [
+  { name: "007 FIRST LIGHT", genre: ["Action"], size: 54, img: "https://upload.wikimedia.org/wikipedia/en/2/2b/007_First_Light_%282026%29_cover.jpg" },
 
-{ name: "007 FIRST LIGHT", genre: ["Action"], size: 54, img: "https://upload.wikimedia.org/wikipedia/en/2/2b/007_First_Light_%282026%29_cover.jpg" },
-
-{ name: "A PLAGUE TALE REQUIEM", genre: ["Action", "Adventure"], size: 48, img: "https://next-media.elkjop.com/image/dv_web_D1800010021388637/597467/a-plague-tale-requiem-pc-windows.jpg?w=640&q=75" },
+{ name: "A PLAGUE TALE REQUIEM", genre: ["Action", "Adventure"], size: 48, img: "https://upload.wikimedia.org/wikipedia/en/a/ae/A_Plague_Tale_Requiem_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "A QUIET PLACE", genre: ["Horror"], size: 38, img: "https://upload.wikimedia.org/wikipedia/en/0/07/A_Quiet_Place_The_Road_Ahead_%282024%29_cover_art.jpg" },
 
@@ -50,7 +55,7 @@ const allGames = [
 
 { name: "ASSASSIN'S CREED - BROTHERHOOD", genre: ["Action", "Adventure"], size: 9, img: "https://upload.wikimedia.org/wikipedia/en/2/2a/Assassins_Creed_brotherhood_cover.jpg" },
 
-{ name: "ASSASSINS CREED - REVELATIONS", genre: ["Action", "Adventure"], size: 6, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Assassins_Creed_Revelations_Cover.jpg" },
+{ name: "ASSASSINS CREED - REVELATIONS", genre: ["Action", "Adventure"], size: 8, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Assassins_Creed_Revelations_Cover.jpg" },
 
 { name: "ASSASSIN'S CREED - SYNDICATE", genre: ["Action", "Adventure"], size: 63, img: "https://upload.wikimedia.org/wikipedia/en/f/f2/Assassin%27s_Creed_Syndicate_cover.jpg" },
 
@@ -520,8 +525,6 @@ const allGames = [
 
 { name: "REANIMAL", genre: ["Horror","Adventure"], size: 15, img: "https://upload.wikimedia.org/wikipedia/en/9/9c/Reanimal_cover_art.jpg" },
 
-{ name: "RED ALERT 3", genre: ["Strategy","RTS"], size: 14.2, img: "https://upload.wikimedia.org/wikipedia/en/9/9b/Command_%26_Conquer_Red_Alert_3_Game_Cover.jpg" },
-
 { name: "RED DEAD REDEMPTION + UNDEAD NIGHTMARE", genre: ["Action","Open World"], size: 9.73, img: "https://media.rockstargames.com/rockstargames/img/global/news/upload/reddeadredemption_undeadnightmare_art.png" },
 
 { name: "RED DEAD REDEMPTION 2", genre: ["Action","Open World"], size: 119.0, img: "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg" },
@@ -725,12 +728,10 @@ const allGames = [
 { name: "WWE 2K25", genre: ["Sports","Wrestling"], size: 90.5, img: "https://upload.wikimedia.org/wikipedia/en/5/53/WWE_2k25_cover.jpg" },
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
-
 ];
 
 const lowEndGames = [
-
-{ name: "AGE OF EMPIRES 2 AGE OF KINGS", genre: ["Strategy"], size: 0.334, img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png/250px-Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png" },
+  { name: "AGE OF EMPIRES 2 AGE OF KINGS", genre: ["Strategy"], size: 0.334, img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png/250px-Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png" },
 
 { name: "AGE OF EMPIRES II DEFINITIVE EDITION", genre: ["Strategy"], size: 15, img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEJAORLYWCvt9bBKyI4AuEKGFTluZU-0I3SfaSUh1jZExuRDh" },
 
@@ -744,7 +745,7 @@ const lowEndGames = [
 
 { name: "ASSASSIN'S CREED - BROTHERHOOD", genre: ["Action", "Adventure"], size: 9, img: "https://upload.wikimedia.org/wikipedia/en/2/2a/Assassins_Creed_brotherhood_cover.jpg" },
 
-{ name: "ASSASSINS CREED - REVELATIONS", genre: ["Action", "Adventure"], size: 6, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Assassins_Creed_Revelations_Cover.jpg" },
+{ name: "ASSASSINS CREED - REVELATIONS", genre: ["Action", "Adventure"], size: 8, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Assassins_Creed_Revelations_Cover.jpg" },
 
 { name: "BALDUR'S GATE 2 - ENHANCED EDITION", genre: ["RPG"], size: 4, img: "https://upload.wikimedia.org/wikipedia/en/b/b4/BGIIEE_cover_art.jpg" },
 
@@ -938,389 +939,212 @@ const lowEndGames = [
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
 
-
 ];
 
-const gameGrid=document.getElementById("gameGrid");
+const games = [...allGames.map((g,i)=>({
+  id:"all-"+i,
+  name:g.name,
+  size:g.size,
+  tags:g.genre,
+  low:false,
+  img:g.img
+})), ...lowEndGames.map((g,i)=>({
+  id:"low-"+i,
+  name:g.name,
+  size:g.size,
+  tags:g.genre,
+  low:true,
+  img:g.img
+}))];
 
-function loadGames(gameList){
+// Remove duplicate entries from the All Games tab while keeping the first occurrence.
+const uniqueAllGames = [];
+const seenNames = new Set();
+for (const g of games.filter(g=>!g.low)) {
+  const key = g.name.trim().toLowerCase();
+  if (!seenNames.has(key)) {
+    seenNames.add(key);
+    uniqueAllGames.push(g);
+  }
+}
+const uniqueLowEndGames = games.filter(g=>g.low);
 
-    gameGrid.innerHTML="";
+let mode="all";
+let selected=[];
 
-    gameList.forEach(game=>{
+const $=id=>document.getElementById(id);
 
-        const card=document.createElement("div");
+function render(){
+  const q=$("searchInput").value.trim().toLowerCase();
+  const source = mode==="all" ? uniqueAllGames : uniqueLowEndGames;
+  const list=source.filter(g=>{
+    const searchOK=!q || g.name.toLowerCase().includes(q) || g.tags.some(t=>t.toLowerCase().includes(q));
+    return searchOK;
+  });
 
-        card.className="game-card";
+  $("gameGrid").innerHTML=list.length?list.map(g=>{
+    const added=selected.includes(g.id);
+    return `<article class="card">
+      <div class="card-media" style="--cover:url("${g.img.replace(/"/g, '%22')}")">
+        ${g.new ? '<span class="new-badge">🔥 NEW</span>' : ''}
+        <img class="card-img" src="${g.img}" alt="${escapeHtml(g.name)}" onerror="this.style.opacity='0'">
+      </div>
+      <div class="card-body">
+        <div class="card-title">${escapeHtml(g.name)}</div>
+        <div class="tags">${g.tags.map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
+        <div class="size"><span class="size-icon">▰</span>${g.size} GB</div>
+        <button class="add-btn ${added?"selected":""}" onclick="toggleGame('${g.id}')">${added?"✓ ADDED":"+ ADD"}</button>
+      </div>
+    </article>`;
+  }).join(""):`<div class="empty" style="grid-column:1/-1">No games found.</div>`;
 
-        if (selectedGames.includes(game.name)) {
-             card.classList.add("added");
-        }
+  updateDrive();
+}
 
-        card.dataset.game=game.name;
-        card.dataset.size=game.size;
+function totalUsed(){
+  return selected.reduce((n,id)=>n+(games.find(g=>g.id===id)?.size||0),0);
+}
 
-        card.innerHTML=`
-
-<img src="${game.img}">
-
-<div class="game-info">
-
-<h3>${game.name}</h3>
-
-<div class="genres">
-
-${game.genre.map(g=>`<span>${g}</span>`).join("")}
-
-</div>
-
-<p class="size">${game.size} GB</p>
-
-</div>
-
-`;
-
-card.addEventListener("click", function(){
-
-    const size = Number(this.dataset.size);
-    const name = this.dataset.game;
-
-    if(this.classList.contains("added")){
-
-    this.classList.remove("added");
-
-    selectedGames = selectedGames.filter(g => g !== name);
-
-}else{
-
-    if(usedSpace + size > driveSize){
-
-        showToast(
-    "❌ Not enough storage!",
-    "Choose a larger drive or remove some games.",
-    "error"
-);
-
-console.log("Storage limit reached");
-return;
-
+function toggleGame(id){
+  if(selected.includes(id)){
+    selected=selected.filter(x=>x!==id);
+    toast("Game removed");
+  }else{
+    const game=games.find(g=>g.id===id);
+    if(totalUsed()+game.size>DRIVE_CAPACITY){
+      toast(`Not enough space on the ${DRIVE_OPTIONS[driveKey].label} drive`);
+      return;
     }
-
-    this.classList.add("added");
-
-    selectedGames.push(name);
-
+    selected.push(id);
+    toast(`${game.name} added`);
+  }
+  render();
 }
 
-    updateStorage();
+function updateDrive(){
+  const used=totalUsed();
+  const remaining=DRIVE_CAPACITY-used;
+  const pct=(used/DRIVE_CAPACITY)*100;
+  $("used").textContent=`${used.toFixed(1)} GB`;
+  $("remaining").textContent=`${remaining.toFixed(1)} GB`;
+  $("gamesAdded").textContent=selected.length;
+  $("selectedCount").textContent=selected.length;
+  $("progress").style.width=`${pct}%`;
+  $("percent").textContent=`${pct.toFixed(1).replace(".0","")}%`;
 
-});
-
-        gameGrid.appendChild(card);
-
-    });
-
+  if($("stickyDriveLabel")) $("stickyDriveLabel").textContent=DRIVE_OPTIONS[driveKey].label;
+  if($("stickyGames")) $("stickyGames").textContent=`${selected.length} GAME${selected.length===1?"":"S"}`;
+  if($("stickyUsed")) $("stickyUsed").textContent=`${used.toFixed(1)} GB`;
+  if($("stickyProgress")) $("stickyProgress").style.width=`${pct}%`;
 }
 
-const allBtn = document.getElementById("allBtn");
-const lowBtn = document.getElementById("lowBtn");
+function openSelected(){
+  const used=totalUsed();
+  $("sheetSummary").textContent=`${selected.length} GAMES • ${used} GB / ${DRIVE_OPTIONS[driveKey].label}`;
+  $("sheetUsed").textContent=`${used} GB`;
+  $("sheetRemaining").textContent=`${DRIVE_CAPACITY-used} GB`;
+  if($("sheetDrive")) $("sheetDrive").textContent=DRIVE_OPTIONS[driveKey].label;
 
-allBtn.classList.add("active");
-
-allBtn.addEventListener("click", () => {
-
-    allBtn.classList.add("active");
-    lowBtn.classList.remove("active");
-
-    document.getElementById("gameTitle").textContent = "All Games";
-
-    loadGames(allGames);
-
-});
-
-lowBtn.addEventListener("click", () => {
-
-    lowBtn.classList.add("active");
-    allBtn.classList.remove("active");
-
-    document.getElementById("gameTitle").textContent = "Low End Games";
-    loadGames(lowEndGames);
-
-});
-
-// ===============================
-// STORAGE SYSTEM
-// ===============================
-
-let driveSize = 1850;
-let usedSpace = 0;
-let selectedGames = [];
-
-// ===============================
-// TOAST NOTIFICATION
-// ===============================
-
-const toast = document.getElementById("toast");
-
-function showToast(message, sub = "", type = "success"){
-
-    // Reset previous classes
-    toast.className = "toast";
-
-    // Add success or error class
-    toast.classList.add(type);
-
-    toast.innerHTML = `
-        ${message}
-        <small>${sub}</small>
-    `;
-
-    toast.classList.add("show");
-
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 2500);
-
+  if(!selected.length){
+    $("selectedList").innerHTML=`<div class="empty"><div style="font-size:30px">🎮</div><br><b style="color:#fff">No games selected yet.</b><br>Add games from All Games or Low End PC Games.</div>`;
+  }else{
+    $("selectedList").innerHTML=selected.map(id=>{
+      const g=games.find(x=>x.id===id);
+      return `<div class="selected-item">
+        <img src="${g.img}" alt="">
+        <div><strong>${escapeHtml(g.name)}</strong><small>${g.tags.join(" • ")}</small></div>
+        <span class="selected-size">${g.size} GB</span>
+        <button class="remove" onclick="removeSelected('${g.id}')">✕</button>
+      </div>`;
+    }).join("");
+  }
+  $("selectedModal").classList.add("open");
 }
 
-const usedSpaceText = document.getElementById("usedSpace");
-const remainingText = document.getElementById("remainingSpace");
-const gameCountText = document.getElementById("gameCount");
-
-function updateStorage(){
-
-
-    const list = document.getElementById("selectedList");
-
-    list.innerHTML = "";
-
-    let total = 0;
-
-    selectedGames.forEach(name=>{
-
-        const game = allGames.find(g=>g.name===name);
-
-        if(!game) return;
-
-        total += game.size;
-
-        list.innerHTML += `
-<div class="selected-item">
-
-    <span>🎮 ${game.name}</span>
-
-    <strong>${game.size} GB</strong>
-
-    <button class="remove-btn"
-    data-name="${game.name}"
-    data-size="${game.size}">
-    ✕
-
-</button>
-
-</div>
-`;
-
-    });
-
-    usedSpace = total;
-
-const remaining = driveSize - usedSpace;
-
-const usedPercent = driveSize > 0
-    ? (usedSpace / driveSize) * 100
-    : 0;
-
-const remainingPercent = 100 - usedPercent;
-
-document.getElementById("usedPercent").textContent =
-    usedPercent.toFixed(0) + "%";
-
-document.getElementById("remainingPercent").textContent =
-    remainingPercent.toFixed(0) + "%";
-
-usedSpaceText.textContent = usedSpace.toFixed(1) + " GB";
-remainingText.textContent = remaining.toFixed(1) + " GB";
-gameCountText.textContent = selectedGames.length;
-
-    document.getElementById("popupTotal").textContent = total + "GB";
+function removeSelected(id){
+  selected=selected.filter(x=>x!==id);
+  render();
+  openSelected();
 }
 
-updateStorage();
+function buildOrder(){
+  const used=totalUsed();
+  const remaining=DRIVE_CAPACITY-used;
+  const lines=selected.map((id,i)=>{
+    const g=games.find(x=>x.id===id);
+    return `${i+1}. ${g.name} — ${g.size} GB`;
+  });
+  return [
+    "🎮 GAMEPRIX GAME ORDER",
+    "━━━━━━━━━━━━━━━━━━━━",
+    "",
+    `💽 DRIVE: ${DRIVE_OPTIONS[driveKey].label}`,
+    "",
+    "🎮 SELECTED GAMES",
+    ...lines,
+    "",
+    "━━━━━━━━━━━━━━━━━━━━",
+    `💾 TOTAL: ${used} GB`,
+    `📦 REMAINING: ${remaining} GB`,
+    "",
+    "Please confirm my order. Thank you!"
+  ].join("\n");
+}
 
+async function copyOrder(){
+  if(!selected.length){toast("Please add at least one game");return;}
+  const text=buildOrder();
+  try{
+    await navigator.clipboard.writeText(text);
+  }catch{
+    const ta=document.createElement("textarea");
+    ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();
+  }
+  toast("Order copied! Opening Messenger...");
+  setTimeout(()=>window.open(MESSENGER_URL,"_blank","noopener,noreferrer"),450);
+}
 
-// ===============================
-// SELECTED GAMES POPUP
-// ===============================
+function escapeHtml(s){
+  return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
+}
+function toast(message){
+  $("toast").textContent=message;
+  $("toast").classList.add("show");
+  clearTimeout(window.__toast);
+  window.__toast=setTimeout(()=>$("toast").classList.remove("show"),2200);
+}
 
-const popup = document.getElementById("selectedPopup");
-const openPopup = document.getElementById("selectedGamesBtn");
-const closePopup = document.getElementById("closePopup");
-
-openPopup.addEventListener("click",()=>{
-
-    popup.style.display="flex";
-
-});
-
-closePopup.addEventListener("click",()=>{
-
-    popup.style.display="none";
-
-});
-
-// ===============================
-// COPY TO CLIPBOARD
-// ===============================
-
-const copyBtn = document.getElementById("copyBtn");
-
-copyBtn.addEventListener("click", () => {
-
-console.log("Copy button clicked");
-
-    let message = "";
-message += "🎮 GAMEPRIX GAME ORDER\n";
-message += "━━━━━━━━━━━━━━━━━━━━\n\n";
-
-message += "💽 Drive\n";
-message += document.getElementById("selectedDrive").textContent + " (";
-message += driveSize + "GB usable)\n\n";
-
-message += "🎮 Selected Games\n\n";
-
-selectedGames.forEach((name,index)=>{
-
-    const game = allGames.find(g=>g.name===name);
-
-    if(game){
-        message += (index+1) + ". " + game.name + " — " + game.size + " GB\n";
+document.querySelectorAll(".drive-option").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const next=btn.dataset.drive;
+    const newCapacity=DRIVE_OPTIONS[next].usable;
+    if(totalUsed()>newCapacity){
+      toast("This drive is too small for your selected games");
+      return;
     }
-
-});
-message += "━━━━━━━━━━━━━━━━━━━━\n";
-message += "📦 Total Size: " + usedSpace + " GB\n\n";
-message += "Thank you for choosing GamePrix!\n";
-message += "Please send this message to our Facebook Page.";
-
-    navigator.clipboard.writeText(message)
-.then(() => {
-
-    showToast(
-        "✅ Order copied!",
-        "Open Messenger and paste your order."
-    );
-
-})
-.catch(err => {
-
-    console.error(err);
-
-    showToast(
-        "❌ Copy failed!",
-        "Clipboard is unavailable.",
-        "error"
-    );
-
-});
+    document.querySelectorAll(".drive-option").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    driveKey=next;
+    DRIVE_CAPACITY=newCapacity;
+    document.querySelector(".drive-badge").textContent=DRIVE_OPTIONS[next].label;
+    render();
+  });
 });
 
-// ===============================
-// REMOVE GAME FROM POPUP
-// ===============================
-
-document.addEventListener("click", function(e){
-
-    if(!e.target.classList.contains("remove-btn")) return;
-
-    const name = e.target.dataset.name;
-
-    // Remove from selected list
-    selectedGames = selectedGames.filter(game => game !== name);
-
-    // Reload game cards
-if (lowBtn.classList.contains("active")) {
-    loadGames(lowEndGames);
-} else {
-    loadGames(allGames);
-}
-
-    // Update everything
-    updateStorage();
-
+document.querySelectorAll(".mode").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelectorAll(".mode").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    mode=btn.dataset.mode;
+    render();
+  });
 });
+$("searchInput").addEventListener("input",render);
+$("viewSelected").addEventListener("click",openSelected);
+if($("stickyView")) $("stickyView").addEventListener("click",openSelected);
+$("closeModal").addEventListener("click",()=>$("selectedModal").classList.remove("open"));
+$("selectedModal").addEventListener("click",e=>{if(e.target.id==="selectedModal")$("selectedModal").classList.remove("open")});
+$("addMore").addEventListener("click",()=>$("selectedModal").classList.remove("open"));
+$("copyOrder").addEventListener("click",copyOrder);
 
-// ===============================
-// DRIVE SELECTOR
-// ===============================
-
-const driveCards = document.querySelectorAll(".drive-card");
-
-driveCards.forEach(card => {
-
-    card.addEventListener("click", () => {
-
-        const newSize = Number(card.dataset.size);
-
-        // Prevent selecting a drive smaller than current games
-        if (usedSpace > newSize) {
-
-    showToast(
-        "❌ Drive too small!",
-        "Remove some games or choose a larger drive.",
-        "error"
-    );
-
-    return;
-}
-
-        // Remove previous selection
-        driveCards.forEach(c => c.classList.remove("selected"));
-
-        // Highlight selected drive
-        card.classList.add("selected");
-
-        // Update storage size
-        driveSize = newSize;
-
-        // Update bottom bar
-        document.getElementById("selectedDrive").textContent =
-            card.dataset.label;
-
-        updateStorage();
-
-    });
-
-});
-
-
-// ===============================
-// SEARCH GAMES
-// ===============================
-
-const searchInput = document.getElementById("search");
-
-searchInput.addEventListener("keyup", function () {
-
-    const keyword = this.value.toLowerCase();
-
-    document.querySelectorAll(".game-card").forEach(card => {
-
-        const title = card.querySelector("h3").textContent.toLowerCase();
-
-        if (title.includes(keyword)) {
-            card.style.display = "block";
-        } else {
-            card.style.display = "none";
-        }
-
-    });
-
-});
-
-
-loadGames(allGames);
-
-
-
-
+render();
