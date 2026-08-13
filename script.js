@@ -728,6 +728,7 @@ const allGames = [
 { name: "WWE 2K25", genre: ["Sports","Wrestling"], size: 90.5, img: "https://upload.wikimedia.org/wikipedia/en/5/53/WWE_2k25_cover.jpg" },
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
+
 ];
 
 const lowEndGames = [
@@ -938,6 +939,7 @@ const lowEndGames = [
 { name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
+
 
 ];
 
