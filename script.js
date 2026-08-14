@@ -519,7 +519,7 @@ const allGames = [
 
 { name: "PROTOTYPE 2", genre: ["Action","Open World"], size: 9.79, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/Prototype_2_game.jpg" },
 
-{ name: "READY OR NOT", genre: ["FPS","Tactical"], size: 58.7, img: "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/da9f50007c771345aba1636b0e3aa47e3210fa36991b36f7.jpg" },
+{ name: "READY OR NOT", genre: ["FPS","Tactical"], size: 65, img: "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/da9f50007c771345aba1636b0e3aa47e3210fa36991b36f7.jpg" },
 
 { name: "REAL BOXING", genre: ["Sports","Fighting"], size: 1.53, img: "https://store-images.s-microsoft.com/image/apps.49258.13510798886623386.c7ed3c21-fa92-4f38-acee-aed027575fe6.5ee74f43-6a26-4741-8298-8cc2e75bbcf4" },
 
