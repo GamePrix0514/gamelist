@@ -187,7 +187,11 @@ body{
   background:#090d12
 }
 .card-body{padding:10px 11px 11px}
-.card-title{font-size:15px;font-weight:900;line-height:1.22;min-height:36px;margin-bottom:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card-title{
+  font-size:15px;font-weight:900;line-height:1.22;min-height:36px;margin-bottom:8px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  white-space:normal;overflow-wrap:anywhere;word-break:normal
+}
 .tags{display:flex;gap:5px;overflow:hidden;margin-bottom:8px}
 .tag{background:#171d25;border:1px solid #27303a;border-radius:6px;padding:4px 6px;font-size:9px;color:#dfe4e8;white-space:nowrap}
 .size{display:flex;align-items:center;gap:6px;font-weight:900;font-size:14px;margin-bottom:9px;color:#55d8ff}
@@ -279,7 +283,11 @@ body{
   .game-grid{gap:9px}
   .card{border-radius:11px}
   .card-body{padding:7px}
-  .card-title{font-size:11px;min-height:30px;margin-bottom:6px}
+  .card-title{
+  font-size:10px;line-height:1.2;min-height:36px;margin-bottom:6px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  white-space:normal;overflow-wrap:anywhere
+}
   .tags{margin-bottom:7px;gap:3px}
   .tag{font-size:7px;padding:3px 4px}
   .size{font-size:10px;margin-bottom:7px}
