@@ -1,7 +1,7 @@
 const DRIVE_OPTIONS = {
   "500": {label:"500GB", usable:460},
   "1000": {label:"1TB", usable:920},
-  "2000": {label:"2TB", usable:1800}
+  "2000": {label:"2TB", usable:1850}
 };
 let driveKey = "2000";
 let DRIVE_CAPACITY = DRIVE_OPTIONS[driveKey].usable;
@@ -939,8 +939,6 @@ const lowEndGames = [
 { name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
 
 { name: "YU-GI-OH LEGACY OF THE DUELIST LINK EVOLUTION", genre: ["Card Game","Strategy"], size: 1.52, img: "https://m.media-amazon.com/images/M/MV5BMDM5MTAyNDAtMThhOS00ZDhjLWEzN2MtOTY0ODI2NmZlM2YxXkEyXkFqcGc@._V1_.jpg" },
-
-
 ];
 
 const games = [...allGames.map((g,i)=>({
