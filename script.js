@@ -61,6 +61,8 @@ const allGames = [
 
 { name: "ASSASSIN'S CREED - UNITY", genre: ["Action", "Adventure"], size: 50, img: "https://upload.wikimedia.org/wikipedia/en/4/41/Assassin%27s_Creed_Unity_cover.jpg" },
 
+  { name: "ASSASSINS CREED BLACK FLAG RESYNCED", genre: ["Action", "Adventure"], size: 68, img: "https://upload.wikimedia.org/wikipedia/en/6/65/Assassin%27s_Creed_Black_Flag_Resynced_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" }, 
+
 { name: "ASSASSINS CREED MIRAGE V1.0.6", genre: ["Action", "Adventure"], size: 42, img: "https://cdn2.penguin.com.au/covers/400/9781506741291.jpg" },
 
 { name: "ASSETTO CORSA COMPETIZIONE", genre: ["Racing", "Simulation"], size: 18, img: "https://upload.wikimedia.org/wikipedia/en/a/aa/Assetto_Corsa_Competizione_cover_art_full.jpg" },
