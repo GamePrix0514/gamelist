@@ -459,7 +459,7 @@ const allGames = [
 
 { name: "NBA 2K16", genre: ["Sports"], size: 43, img: "https://www.cheatcc.com/wp-content/uploads/2023/05/nba2k16review_boxart.jpg" },
 
-{ name: "NBA 2K26 (MODDED FROM 2K23)", genre: ["Sports"], size: 168, img: "https://assets.2k.com/1a6ngf98576c/2QH1PlkhFZ9SQnAhJeAcCr/8c30228f14eceaf5566109d0406d59d8/NBA26_Standard_FOB_425x535.png" },
+{ name: "NBA 2K27 (MODDED FROM 2K23)", genre: ["Sports"], size: 169, img: "https://www.mmoga.com/images/games/_ext/1850065/nba-2k27_large.png" },
 
 { name: "NEED FOR SPEED CARBON", genre: ["Racing"], size: 5.11, img: "https://w0.peakpx.com/wallpaper/801/770/HD-wallpaper-need-4-speed-carbon-evo-mitsubishi-mitsubishi-evo-ix-need4speed-need4speedcarbon-needforspeed-nfs-nfscarbon-ubc.jpg" },
 
