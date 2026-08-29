@@ -27,6 +27,8 @@ const allGames = [
 
 { name: "AGE OF MYTHOLOGY RETOLD", genre: ["Strategy"], size: 25, img: "https://upload.wikimedia.org/wikipedia/en/c/cc/Age_of_Mythology_Retold_cover_art.jpg" },
 
+{ name: "ALAN WAKE 2", genre: ["Action", "Horror"], size: 82, img: "https://upload.wikimedia.org/wikipedia/en/e/ed/Alan_Wake_2_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },  
+
 { name: "ALAN WAKE REMASTERED", genre: ["Action", "Horror"], size: 38, img: "https://buycheapplaycheap.com/wp-content/uploads/2021/10/Alan-Wake-Remastered.jpg" },
 
 { name: "ALOFT", genre: ["Adventure", "Simulation"], size: 12, img: "https://images.igdb.com/igdb/image/upload/t_cover_big/co9c4c.webp" },
