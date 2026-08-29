@@ -315,7 +315,7 @@ const allGames = [
 
 { name: "GTA III DEFINITIVE EDITION", genre: ["Action", "Open World"], size: 4.27, img: "https://dnm.nflximg.net/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYSF9ZfYHRPq_UA-VHc_H7x0pU6L5FcrBGcfyUGen4EKn0wfKQ7do_A39IUs44swOQpUdrnjYE0TTi2xacCOI5JUJOGr1I3mit-K55LMYT20_YO6UlQTVFchH4jdm43wpcDqIA.jpg" },
 
-{ name: "GTA IV COMPLETE", genre: ["Action", "Open World"], size: 21.6, img: "https://img.lazcdn.com/g/p/1923a6aef70480e80898c3bf6ccc89bb.jpg_720x720q80.jpg" },
+{ name: "GTA IV COMPLETE", genre: ["Action", "Open World"], size: 28, img: "https://img.lazcdn.com/g/p/1923a6aef70480e80898c3bf6ccc89bb.jpg_720x720q80.jpg" },
 
 { name: "GTA SAN ANDREAS - ORIGINAL VERSION", genre: ["Action", "Open World"], size: 5, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg" },
 
@@ -814,7 +814,7 @@ const lowEndGames = [
 
 { name: "FAR CRY 3", genre: ["FPS", "Action"], size: 9.73, img: "https://upload.wikimedia.org/wikipedia/en/c/c6/Far_Cry_3_PAL_box_art.jpg" },
 
-{ name: "GTA IV COMPLETE", genre: ["Action", "Open World"], size: 21.6, img: "https://img.lazcdn.com/g/p/1923a6aef70480e80898c3bf6ccc89bb.jpg_720x720q80.jpg" },
+{ name: "GTA IV COMPLETE", genre: ["Action", "Open World"], size: 28, img: "https://img.lazcdn.com/g/p/1923a6aef70480e80898c3bf6ccc89bb.jpg_720x720q80.jpg" },
 
 { name: "GTA SAN ANDREAS - ORIGINAL VERSION", genre: ["Action", "Open World"], size: 5, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg" },
 
