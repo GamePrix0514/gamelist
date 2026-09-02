@@ -27,7 +27,7 @@ const allGames = [
 
 { name: "AGE OF MYTHOLOGY RETOLD", genre: ["Strategy"], size: 25, img: "https://upload.wikimedia.org/wikipedia/en/c/cc/Age_of_Mythology_Retold_cover_art.jpg" },
 
-{ name: "ALAN WAKE 2", genre: ["Action", "Horror"], size: 82, img: "https://upload.wikimedia.org/wikipedia/en/e/ed/Alan_Wake_2_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },  
+{ name: "ALAN WAKE 2", genre: ["Action", "Horror"], size: 82, img: "https://upload.wikimedia.org/wikipedia/en/e/ed/Alan_Wake_2_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "ALAN WAKE REMASTERED", genre: ["Action", "Horror"], size: 38, img: "https://buycheapplaycheap.com/wp-content/uploads/2021/10/Alan-Wake-Remastered.jpg" },
 
@@ -63,7 +63,7 @@ const allGames = [
 
 { name: "ASSASSIN'S CREED - UNITY", genre: ["Action", "Adventure"], size: 50, img: "https://upload.wikimedia.org/wikipedia/en/4/41/Assassin%27s_Creed_Unity_cover.jpg" },
 
-  { name: "ASSASSINS CREED BLACK FLAG RESYNCED", genre: ["Action", "Adventure"], size: 68, img: "https://upload.wikimedia.org/wikipedia/en/6/65/Assassin%27s_Creed_Black_Flag_Resynced_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" }, 
+{ name: "ASSASSINS CREED BLACK FLAG RESYNCED", genre: ["Action", "Adventure"], size: 68, img: "https://upload.wikimedia.org/wikipedia/en/6/65/Assassin%27s_Creed_Black_Flag_Resynced_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" }, 
 
 { name: "ASSASSINS CREED MIRAGE V1.0.6", genre: ["Action", "Adventure"], size: 42, img: "https://cdn2.penguin.com.au/covers/400/9781506741291.jpg" },
 
@@ -113,9 +113,11 @@ const allGames = [
 
 { name: "BIOSHOCK 2 REMASTERED", genre: ["Action", "FPS"], size: 17.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYdVu1QrRWNd6uFGPhlR7PLK03g5pbZyTzTQ&s" },
 
-{ name: "BIOSHOCK INFINITE", genre: ["Action", "FPS"], size: 38, img: "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg" },
+{ name: "BIOSHOCK INFINITE", genre: ["Action"], size: 38, img: "https://upload.wikimedia.org/wikipedia/en/a/a3/Official_cover_art_for_Bioshock_Infinite.jpg" },
 
 { name: "BIOSHOCK REMASTERED", genre: ["Action", "FPS"], size: 17.3, img: "https://s.pacn.ws/1/p/ym/bioshock-remastered-623353.9.jpg?v=ry4wtu" },
+
+{ name: "BLEACH REBIRTH OF SOULS", genre: ["Action", "FPS"], size: 72, img: "https://upload.wikimedia.org/wikipedia/en/3/3e/Bleach_Rebirth_of_Souls_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "BLACK MYTH WUKONG", genre: ["Action", "RPG"], size: 140, img: "https://upload.wikimedia.org/wikipedia/en/a/a6/Black_Myth_Wukong_cover_art.jpg" },
 
@@ -462,9 +464,9 @@ const allGames = [
 { name: "NBA 2K16", genre: ["Sports"], size: 43, img: "https://www.cheatcc.com/wp-content/uploads/2023/05/nba2k16review_boxart.jpg" },
 
 { name: "NBA 2K27 (MODDED FROM 2K23)", genre: ["Sports"], size: 169, img: "https://www.mmoga.com/images/games/_ext/1850065/nba-2k27_large.png" },
-  
+
 { name: "NBA 2K27 ULTRA EDITION", genre: ["Sports"], size: 103, img: "https://www.mmoga.com/images/games/_ext/1850065/nba-2k27_large.png" },
-  
+
 { name: "NEED FOR SPEED CARBON", genre: ["Racing"], size: 5.11, img: "https://w0.peakpx.com/wallpaper/801/770/HD-wallpaper-need-4-speed-carbon-evo-mitsubishi-mitsubishi-evo-ix-need4speed-need4speedcarbon-needforspeed-nfs-nfscarbon-ubc.jpg" },
 
 { name: "NEED FOR SPEED HEAT DELUXE EDITION", genre: ["Racing"], size: 30.2, img: "https://s.pacn.ws/1/p/10n/need-for-speed-heat-deluxe-edition-659881.12.jpg?v=sl4ufg" },
@@ -547,9 +549,9 @@ const allGames = [
 
 { name: "RESIDENT EVIL 6", genre: ["Horror","Action"], size: 12.5, img: "https://preview.redd.it/epzoksw9hmu61.jpg?width=640&crop=smart&auto=webp&s=b365452e4a8ab9f75cdf0bab3f60542d1983119d" },
 
-{ name: "RESIDENT EVIL 7 BIOHAZARD", genre: ["Horror","Survival"], size: 22.9, img: "https://upload.wikimedia.org/wikipedia/en/f/fd/Resident_Evil_7_cover_art.jpg" },
+{ name: "RESIDENT EVIL 7 BIOHAZARD", genre: ["Horror","Survival"], size: 65, img: "https://upload.wikimedia.org/wikipedia/en/f/fd/Resident_Evil_7_cover_art.jpg" },
 
-{ name: "RESIDENT EVIL HD", genre: ["Horror","Survival"], size: 11.8, img: "https://m.media-amazon.com/images/M/MV5BNTEzMjY4OTAtMDI2Yy00NjFmLTg5NTQtZmQxODYxMTA4ODY2XkEyXkFqcGc@._V1_.jpg" },
+{ name: "RESIDENT EVIL HD", genre: ["Horror","Survival"], size: 18, img: "https://m.media-amazon.com/images/M/MV5BNTEzMjY4OTAtMDI2Yy00NjFmLTg5NTQtZmQxODYxMTA4ODY2XkEyXkFqcGc@._V1_.jpg" },
 
 { name: "RESIDENT EVIL OPERATION RACOON CITY", genre: ["Horror","TPS"], size: 9.82, img: "https://upload.wikimedia.org/wikipedia/en/5/52/OperationRaccoonCity.jpg" },
 
@@ -559,7 +561,7 @@ const allGames = [
 
 { name: "REVENGE OF THE SAVAGE PLANET", genre: ["Adventure","Sci-Fi"], size: 12.6, img: "https://upload.wikimedia.org/wikipedia/en/4/44/Revenge_of_the_Savage_Planet_cover_art.png" },
 
-{ name: "RIDE 5", genre: ["Racing","Sports"], size: 43.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpa4tLgNYBOgYiRaxsR5jJWP5Sek_O4ibRaQ&s" },
+{ name: "RIDE 5", genre: ["Racing","Sports"], size: 49, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpa4tLgNYBOgYiRaxsR5jJWP5Sek_O4ibRaQ&s" },
 
 { name: "RISE OF THE RONIN", genre: ["Action","RPG"], size: 149, img: "https://upload.wikimedia.org/wikipedia/en/b/bf/Rise_of_the_Ronin_Key_Art.jpg" },
 
@@ -604,6 +606,8 @@ const allGames = [
 { name: "SNIPER GHOST WARRIOR CONTRACTS", genre: ["FPS","Tactical"], size: 12.6, img: "https://upload.wikimedia.org/wikipedia/en/7/75/SGWC_cover_art.jpg" },
 
 { name: "SNIPER GHOST WARRIOR CONTRACTS 2", genre: ["FPS","Tactical"], size: 15, img: "https://images.igdb.com/igdb/image/upload/t_1080p/co2nuh.jpg" },
+
+{ name: "SOLO LEVELING ARISE OVERDRIVE", genre: ["Action","Fantasy"], size: 46, img: "https://images.igdb.com/igdb/image/upload/t_cover_big/coakb8.webp" },
 
 { name: "SONIC & SEGA ALL STARS RACING", genre: ["Racing","Arcade"], size: 6, img: "https://upload.wikimedia.org/wikipedia/en/1/17/SEGA_Racing.jpg" },
 
