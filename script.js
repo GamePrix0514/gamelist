@@ -23,7 +23,7 @@ const allGames = [
 
 { name: "AGE OF EMPIRES 4", genre: ["Strategy"], size: 77, img: "https://upload.wikimedia.org/wikipedia/en/0/08/Age_of_Empires_IV_Cover_Art.png" },
 
-{ name: "AGE OF EMPIRES II DEFINITIVE EDITION", genre: ["Strategy"], size: 15, img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEJAORLYWCvt9bBKyI4AuEKGFTluZU-0I3SfaSUh1jZExuRDh" },
+{ name: "AGE OF EMPIRES II DEFINITIVE EDITION", genre: ["Strategy"], size: 33, img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEJAORLYWCvt9bBKyI4AuEKGFTluZU-0I3SfaSUh1jZExuRDh" },
 
 { name: "AGE OF MYTHOLOGY RETOLD", genre: ["Strategy"], size: 25, img: "https://upload.wikimedia.org/wikipedia/en/c/cc/Age_of_Mythology_Retold_cover_art.jpg" },
 
