@@ -559,6 +559,8 @@ const allGames = [
 
 { name: "RESIDENT EVIL VILLAGE", genre: ["Horror","Survival"], size: 37, img: "https://upload.wikimedia.org/wikipedia/en/2/2c/Resident_Evil_Village.png" },
 
+{ name: "RESONANCE: A PLAGUE TALE LEGACY ", genre: ["Action-adventure","Stealth"], size: 76, img: "https://upload.wikimedia.org/wikipedia/en/9/95/Resonance_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "REVENGE OF THE SAVAGE PLANET", genre: ["Adventure","Sci-Fi"], size: 12.6, img: "https://upload.wikimedia.org/wikipedia/en/4/44/Revenge_of_the_Savage_Planet_cover_art.png" },
 
 { name: "RIDE 5", genre: ["Racing","Sports"], size: 49, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpa4tLgNYBOgYiRaxsR5jJWP5Sek_O4ibRaQ&s" },
