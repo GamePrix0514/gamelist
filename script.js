@@ -479,6 +479,8 @@ const allGames = [
 
 { name: "NEED FOR SPEED PRO STREET", genre: ["Racing"], size: 9.57, img: "https://upload.wikimedia.org/wikipedia/en/1/16/NFS_ProStreet_cover.png" },
 
+{ name: "NEED FOR RIVALS COMPLETE EDITION", genre: ["Racing"], size: 10, img: "https://upload.wikimedia.org/wikipedia/en/e/e5/Need_for_Speed_Rivals_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "NEED FOR SPEED UNDERGROUND 2", genre: ["Racing"], size: 2.91, img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Nfsu2-win-cover.jpg/250px-Nfsu2-win-cover.jpg" },
 
 { name: "NICKELODEON ALL-STAR BRAWL 2", genre: ["Fighting","Family"], size: 13, img: "https://upload.wikimedia.org/wikipedia/en/2/2a/Nickelodeon_All-Star_Brawl_2_cover.jpg" },
@@ -877,6 +879,8 @@ const lowEndGames = [
 { name: "NEED FOR SPEED MOST WANTED (2012)", genre: ["Racing"], size: 6.32, img: "https://upload.wikimedia.org/wikipedia/en/b/b0/Nfs-most-wanted-2012-gen-packart.jpg" },
 
 { name: "NEED FOR SPEED PRO STREET", genre: ["Racing"], size: 9.57, img: "https://upload.wikimedia.org/wikipedia/en/1/16/NFS_ProStreet_cover.png" },
+
+{ name: "NEED FOR RIVALS COMPLETE EDITION", genre: ["Racing"], size: 10, img: "https://upload.wikimedia.org/wikipedia/en/e/e5/Need_for_Speed_Rivals_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "NEED FOR SPEED UNDERGROUND 2", genre: ["Racing"], size: 2.91, img: "https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Nfsu2-win-cover.jpg/250px-Nfsu2-win-cover.jpg" },
 
