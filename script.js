@@ -425,6 +425,8 @@ const allGames = [
 
 { name: "MEDAL OF HONOR WARFIGHTER", genre: ["FPS","War"], size: 15.8, img: "https://upload.wikimedia.org/wikipedia/en/e/e2/Warfighter.jpg" },
 
+{ name: "METAL GEAR SOLID 4 GUNS OF THE PATRIOTS", genre: ["Stealth","Action"], size: 23, img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR5s3ksnAtcuzodevtQ7mG36TyDHu42wPcQ2SzE-7MSMmKZyYFc" },
+
 { name: "METAL GEAR SOLID DELTA SNAKE EATER", genre: ["Stealth","Action"], size: 93.9, img: "https://upload.wikimedia.org/wikipedia/en/0/08/MetalGearSolidDelta.jpg" },
 
 { name: "METAL GEAR SOLID V THE PHANTOM PAIN", genre: ["Stealth","Action"], size: 22.9, img: "https://upload.wikimedia.org/wikipedia/en/8/8f/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png" },
@@ -650,6 +652,8 @@ const allGames = [
 { name: "TEKKEN 8", genre: ["Fighting"], size: 126, img: "https://upload.wikimedia.org/wikipedia/en/b/b4/Tekken_8_cover_art.jpg" },
 
 { name: "TEKKEN 7 V5.10 INCL ALL DLC", genre: ["Fighting"], size: 81, img: "https://upload.wikimedia.org/wikipedia/en/1/17/Official_Tekken_7_Logo.jpg" },
+
+{ name: "THE BLOOD OF DAWNWALKER", genre: ["Open World"], size: 55, img: "https://upload.wikimedia.org/wikipedia/en/8/8c/The_Blood_of_Dawnwalker_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "THE CALLISTO PROTOCOL", genre: ["Horror","Sci-Fi"], size: 95, img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1544020/header.jpg?t=1760331403" },
 
