@@ -365,6 +365,8 @@ const allGames = [
 
 { name: "INTERNET CAFE SIMULATOR 2", genre: ["Simulation"], size: 6.68, img: "https://www.apklinker.com/wp-content/uploads/2022/01/InternetCafeSimulator-320x320.png" },
 
+{ name: "INVINSIBLE VS", genre: ["Fighting"], size: 12, img: "https://upload.wikimedia.org/wikipedia/en/8/84/Invincible_VS_cover_art.jpeg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "IT TAKES TWO", genre: ["Co-op","Adventure"], size: 43.5, img: "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png" },
 
 { name: "JAMES BOND 007 QUANTUM OF SOLACE", genre: ["FPS","Action"], size: 7.87, img: "https://upload.wikimedia.org/wikipedia/en/a/ab/Quantum_of_Solace_Cover_Art.PNG" },
@@ -404,6 +406,8 @@ const allGames = [
 { name: "MAFIA III", genre: ["Action","Open World"], size: 37.3, img: "https://upload.wikimedia.org/wikipedia/en/9/9f/Mafia_III_cover_art.jpg" },
 
 { name: "MAFIA THE OLD COUNTRY", genre: ["Action","Open World"], size: 46, img: "https://upload.wikimedia.org/wikipedia/en/a/af/Mafia_The_Old_Country_cover_art.jpg" },
+
+{ name: "MANOR LORDS", genre: ["City-Builder","Strategy"], size: 12, img: "https://upload.wikimedia.org/wikipedia/en/b/ba/Manor_Lords_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "MARVEL VS CAPCOM INFINITE", genre: ["Fighting","Superhero"], size: 59, img: "https://upload.wikimedia.org/wikipedia/en/6/62/MvCI_Cover.png" },
 
@@ -454,6 +458,8 @@ const allGames = [
 { name: "MOTOGP 24", genre: ["Racing","Sports"], size: 24.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdAQtnf8IL9VHUUWuqbi-spTAlVHJ818K4Ng&s" },
 
 { name: "MOUNT AND BLADE II BANNERLORD", genre: ["RPG","Strategy"], size: 50, img: "https://upload.wikimedia.org/wikipedia/en/4/45/Mount_%26_Blade_II_-_Bannerlord_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
+{ name: "MX BIKES", genre: ["Racing","Simulation"], size: 2, img: "https://www.allkeyshop.com/blog/wp-content/uploads/MXBikes-2.jpg" },
 
 { name: "MY HERO ACADEMIA ALL JUSTICE", genre: ["Fighting","Anime"], size: 14, img: "https://static0.thegamerimages.com/wordpress/wp-content/uploads/sharedimages/2025/07/my-hero-academia-all-s-justice-tag-image.jpg?q=50&fit=contain&w=480&dpr=1.5" },
 
@@ -644,6 +650,8 @@ const allGames = [
 { name: "STREET FIGHTER X TEKKEN", genre: ["Fighting"], size: 6.71, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/SF-X-Tekken_box_art.jpg" },
 
 { name: "SUPER MARIO 3D WORLD + BROWSER’S FURY", genre: ["Platformer","Adventure"], size: 4, img: "https://mario.wiki.gallery/images/3/30/SM3DWBF_Box_NA_Final.png" },
+
+{ name: "SUPER MARIO BROS. X", genre: ["Platformer","Adventure"], size: 1, img: "https://www.speedrun.com/static/game/pdv0x91w/cover.png?v=0371d56" },
 
 { name: "SUPERMARKET SIMULATOR", genre: ["Simulation"], size: 4.26, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co5opi.jpg" },
 
@@ -870,6 +878,8 @@ const lowEndGames = [
 
 { name: "MINECRAFT BEDROCK EDITION", genre: ["Sandbox","Survival"], size: 3, img: "https://cdn2.steamgriddb.com/thumb/779fa7c32fcfbcc6162e4bc111c62b43.jpg" },
 
+{ name: "MX BIKES", genre: ["Racing","Simulation"], size: 2, img: "https://www.allkeyshop.com/blog/wp-content/uploads/MXBikes-2.jpg" },
+
 { name: "NARUTO SHIPUUDEN ULTIMATE NINJA STORM 4", genre: ["Fighting","Anime"], size: 38.9, img: "https://upload.wikimedia.org/wikipedia/en/5/54/NSUNS4_game_cover.png" },
 
 { name: "NBA 2K14", genre: ["Sports"], size: 7.21, img: "https://upload.wikimedia.org/wikipedia/en/8/87/NBA_2K14_cover.jpg" },
@@ -931,6 +941,8 @@ const lowEndGames = [
 { name: "STARCRAFT REMASTERED", genre: ["Strategy","RTS"], size: 5.60, img: "https://gamegator.net/_next/image?url=https%3A%2F%2Fimages.gamegator.net%2Fco3wal&w=640&q=75" },
 
 { name: "STREET FIGHTER X TEKKEN", genre: ["Fighting"], size: 6.71, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/SF-X-Tekken_box_art.jpg" },
+
+{ name: "SUPER MARIO BROS. X", genre: ["Platformer","Adventure"], size: 1, img: "https://www.speedrun.com/static/game/pdv0x91w/cover.png?v=0371d56" },
 
 { name: "THE LORD OF THE RINGS WAR IN THE NORTH", genre: ["Action","RPG"], size: 7.08, img: "https://upload.wikimedia.org/wikipedia/en/c/c2/LOTR_War_in_the_North.png" },
 
