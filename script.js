@@ -35,6 +35,8 @@ const allGames = [
 
 { name: "ALONE IN THE DARK", genre: ["Horror"], size: 29, img: "https://upload.wikimedia.org/wikipedia/en/0/05/Alone_in_the_dark_2022.jpg" },
 
+{ name: "ANIMAL CROSSING NEW HORIZONS", genre: ["Life Simmulation"], size: 7, img: "https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" },
+
 { name: "ANNO 1800 COMPLETE EDITION ALL DLC", genre: ["Strategy", "Simulation"], size: 95, img: "https://upload.wikimedia.org/wikipedia/en/7/79/Anno_1800_cover.png" },
 
 { name: "ASSASIN’S CREED 4 BLACK FLAG", genre: ["Action", "Adventure"], size: 27, img: "https://m.media-amazon.com/images/M/MV5BOTAzZWQwNjMtMjNmZi00NjJkLWI5MjQtNjA3NDI1NjExMTA4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
