@@ -175,7 +175,7 @@ const allGames = [
 
 { name: "CITIES - SKYLINES COMPLETE DLC", size: 16.3, genre: ["Simulation","City Builder"], img: "https://m.media-amazon.com/images/I/61fJdSCC1BL._UF1000,1000_QL80_.jpg" },
 
-{ name: "CITIES SKYLINES 2", size: 59.3, genre: ["Simulation","City Builder"], img: "https://upload.wikimedia.org/wikipedia/en/3/35/Cities_Skylines_II_Cover_Art.png" },
+{ name: "CITIES SKYLINES 2", size: 64, genre: ["Simulation","City Builder"], img: "https://upload.wikimedia.org/wikipedia/en/3/35/Cities_Skylines_II_Cover_Art.png" },
 
 { name: "CLAIR OBSCUR EXPEDITION-33", size: 42.2, genre: ["RPG","Turn-Based"], img: "https://upload.wikimedia.org/wikipedia/en/5/5a/Clair_Obscur%2C_Expedition_33_Cover_1.webp" },
 
