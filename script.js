@@ -193,6 +193,8 @@ const allGames = [
 
 { name: "CONTRA OPERATION GALUGA", size: 13.5, genre: ["Action","Arcade"], img: "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000063988/desc/d3f76db9ca59f4d8e0f9856ed53b9df6fc5086323ce717a1c8ffe0e07f5f43b5" },
 
+{ name: "CONTROL", genre: ["Action role-playing"], size: 42, img: "https://upload.wikimedia.org/wikipedia/en/e/e5/Control_game_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "CONTROL RESONANT", genre: ["Action role-playing"], size: 104, img: "https://upload.wikimedia.org/wikipedia/en/a/a1/Control_Resonant_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "COUNTER STRIKE XTREME", size: 2.12, genre: ["FPS","Multiplayer"], img: "https://2img.net/h/www.fullprogramlarindir.com/wp-content/uploads/2014/05/Counter-Strike-Xtreme-V6-2011-Cover.jpg" },
