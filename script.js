@@ -193,6 +193,8 @@ const allGames = [
 
 { name: "CONTRA OPERATION GALUGA", size: 13.5, genre: ["Action","Arcade"], img: "https://assets.nintendo.com/image/upload/f_auto/q_auto/dpr_1.5/c_scale,w_400/ncom/software/switch/70010000063988/desc/d3f76db9ca59f4d8e0f9856ed53b9df6fc5086323ce717a1c8ffe0e07f5f43b5" },
 
+{ name: "CONTROL RESONANT", genre: ["Action role-playing"], size: 104, img: "https://upload.wikimedia.org/wikipedia/en/a/a1/Control_Resonant_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "COUNTER STRIKE XTREME", size: 2.12, genre: ["FPS","Multiplayer"], img: "https://2img.net/h/www.fullprogramlarindir.com/wp-content/uploads/2014/05/Counter-Strike-Xtreme-V6-2011-Cover.jpg" },
 
 { name: "CRASH BANDICOOT 4", genre: ["Platformer", "Adventure"], size: 23.3, img: "https://upload.wikimedia.org/wikipedia/en/3/39/Crash_Bandicoot_4_Box_Art.jpeg" },
@@ -653,6 +655,8 @@ const allGames = [
 
 { name: "STREET FIGHTER X TEKKEN", genre: ["Fighting"], size: 6.71, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/SF-X-Tekken_box_art.jpg" },
 
+{ name: "STRONGHOLD DEFINITIVE EDITION", genre: ["Strategy"], size: 4, img: "https://images.gog.com/0316325ff4d998ae228e6f11a9e6812d3f0a656cb8504db28741eaab6cfd6eb8_glx_vertical_cover.webp?namespace=gamesdb	" },
+
 { name: "SUPER MARIO 3D WORLD + BROWSER’S FURY", genre: ["Platformer","Adventure"], size: 4, img: "https://mario.wiki.gallery/images/3/30/SM3DWBF_Box_NA_Final.png" },
 
 { name: "SUPER MARIO BROS. X", genre: ["Platformer","Adventure"], size: 1, img: "https://www.speedrun.com/static/game/pdv0x91w/cover.png?v=0371d56" },
@@ -915,8 +919,6 @@ const lowEndGames = [
 { name: "PROTOTYPE", genre: ["Action","Open World"], size: 7.85, img: "https://upload.wikimedia.org/wikipedia/en/b/b2/PROTOTYPE.png" },
 
 { name: "PROTOTYPE 2", genre: ["Action","Open World"], size: 9.79, img: "https://upload.wikimedia.org/wikipedia/en/f/fb/Prototype_2_game.jpg" },
-
-{ name: "REAL BOXING", genre: ["Sports","Fighting"], size: 1.53, img: "https://store-images.s-microsoft.com/image/apps.49258.13510798886623386.c7ed3c21-fa92-4f38-acee-aed027575fe6.5ee74f43-6a26-4741-8298-8cc2e75bbcf4" },
 
 { name: "RESIDENT EVIL 4", genre: ["Horror","Action"], size: 11.7, img: "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg" },
 
