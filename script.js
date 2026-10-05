@@ -293,7 +293,7 @@ const allGames = [
 
 { name: "FIFA 16", genre: ["Sports"], size: 19.4, img: "https://upload.wikimedia.org/wikipedia/en/2/27/FIFA_16_cover.jpg" },
 
-{ name: "FIFA 23", genre: ["Sports"], size: 46.4, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BM66WP5WMzTLWD8MYj6afkn2hTiNmkd3tA&s" },
+{ name: "FIFA 23", genre: ["Sports"], size: 48, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8BM66WP5WMzTLWD8MYj6afkn2hTiNmkd3tA&s" },
 
 { name: "FIGHT NIGHT FOREVER", genre: ["Sports", "Fighting"], size: 7, img: "https://cdn2.steamgriddb.com/thumb/61972e693fd7f112e9bbf1223850f953.jpg" },
 
@@ -601,7 +601,7 @@ const allGames = [
 
 { name: "SEKIRO SHADOWS DIE TWICE", genre: ["Action","Soulslike"], size: 13.9, img: "https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Sekiro_art.jpg/250px-Sekiro_art.jpg" },
 
-{ name: "SHADOW OF THE TOMB RAIDER CROFT EDITION", genre: ["Action","Adventure"], size: 35.4, img: "https://cdn.gameboost.com/igdb/covers/99122/co3he9.jpg" },
+{ name: "SHADOW OF THE TOMB RAIDER DEFINITIVE EDITION", genre: ["Action","Adventure"], size: 35.4, img: "https://cdn.gameboost.com/igdb/covers/99122/co3he9.jpg" },
 
 { name: "SIFU", genre: ["Action","Martial Arts"], size: 31, img: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2138710/header.jpg?t=1754555101" },
 
@@ -755,7 +755,7 @@ const allGames = [
 
 { name: "WOLFENSTEIN THE NEW ORDER", genre: ["FPS","Action"], size: 43.4, img: "https://upload.wikimedia.org/wikipedia/en/9/95/Wolfenstein_The_New_Order_cover.jpg" },
 
-{ name: "WORLD WAR Z AFTERMATH", genre: ["TPS","Zombie"], size: 61.0, img: "https://cdn.technobezz.com/games/games/cover/world-war-z-aftermath/world-war-z-aftermath-cover-gamebezz-com.jpg" },
+{ name: "WORLD WAR Z AFTERMATH", genre: ["TPS","Zombie"], size: 57, img: "https://cdn.technobezz.com/games/games/cover/world-war-z-aftermath/world-war-z-aftermath-cover-gamebezz-com.jpg" },
 
 { name: "WUCHANG FALLEN FEATHERS", genre: ["Action","Soulslike"], size: 45.7, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Wuchang_Fallen_Feathers_cover_art.jpg" },
 
