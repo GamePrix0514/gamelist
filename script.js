@@ -1,4 +1,5 @@
 const DRIVE_OPTIONS = {
+  "320": {label:"320GB", usable:280},
   "500": {label:"500GB", usable:460},
   "1000": {label:"1TB", usable:920},
   "2000": {label:"2TB", usable:1800}
@@ -755,7 +756,7 @@ const allGames = [
 
 { name: "WOLFENSTEIN THE NEW ORDER", genre: ["FPS","Action"], size: 43.4, img: "https://upload.wikimedia.org/wikipedia/en/9/95/Wolfenstein_The_New_Order_cover.jpg" },
 
-{ name: "WORLD WAR Z AFTERMATH", genre: ["TPS","Zombie"], size: 57, img: "https://cdn.technobezz.com/games/games/cover/world-war-z-aftermath/world-war-z-aftermath-cover-gamebezz-com.jpg" },
+{ name: "WORLD WAR Z AFTERMATH", genre: ["TPS","Zombie"], size: 61.0, img: "https://cdn.technobezz.com/games/games/cover/world-war-z-aftermath/world-war-z-aftermath-cover-gamebezz-com.jpg" },
 
 { name: "WUCHANG FALLEN FEATHERS", genre: ["Action","Soulslike"], size: 45.7, img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Wuchang_Fallen_Feathers_cover_art.jpg" },
 
