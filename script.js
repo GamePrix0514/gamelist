@@ -120,6 +120,8 @@ const allGames = [
 
 { name: "BIOSHOCK REMASTERED", genre: ["Action", "FPS"], size: 17.3, img: "https://s.pacn.ws/1/p/ym/bioshock-remastered-623353.9.jpg?v=ry4wtu" },
 
+{ name: "BLACKWOOD", genre: ["Action", "RPG"], size: 25, img: "https://assets-prd.ignimgs.com/2025/10/06/blackwood-button-1759767284552.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80https://assets-prd.ignimgs.com/2025/10/06/blackwood-button-1759767284552.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80" },
+
 { name: "BLEACH REBIRTH OF SOULS", genre: ["Action", "FPS"], size: 72, img: "https://upload.wikimedia.org/wikipedia/en/3/3e/Bleach_Rebirth_of_Souls_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "BLACK MYTH WUKONG", genre: ["Action", "RPG"], size: 140, img: "https://upload.wikimedia.org/wikipedia/en/a/a6/Black_Myth_Wukong_cover_art.jpg" },
@@ -255,6 +257,8 @@ const allGames = [
 { name: "DRAGON BALL Z KAKAROT", genre: ["RPG", "Anime"], size: 51.1, img: "https://upload.wikimedia.org/wikipedia/en/e/e4/Dragon_Ball_Z_Kakarot_logo.png" },
 
 { name: "DRAGON'S DOGMA 2", genre: ["RPG", "Fantasy"], size: 67.1, img: "https://upload.wikimedia.org/wikipedia/en/c/c7/Dragon%27s_Dogma_2_cover_art.jpg" },
+
+{ name: "DUNE AWAKENING", genre: ["RPG", "Action"], size: 43, img: "https://upload.wikimedia.org/wikipedia/en/e/ef/Dune_Awakening_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "DYING LIGHT 2 STAY HUMAN", genre: ["Action", "Horror"], size: 56.3, img: "https://upload.wikimedia.org/wikipedia/en/6/6d/Dying_Light_2_cover_art.jpg" },
 
