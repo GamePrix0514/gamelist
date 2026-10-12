@@ -22,7 +22,7 @@ const allGames = [
 
 { name: "AGE OF EMPIRES 2 AGE OF KINGS", genre: ["Strategy"], size: 0.334, img: "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png/250px-Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png" },
 
-{ name: "AGE OF EMPIRES 4", genre: ["Strategy"], size: 77, img: "https://upload.wikimedia.org/wikipedia/en/0/08/Age_of_Empires_IV_Cover_Art.png" },
+{ name: "AGE OF EMPIRES 4", genre: ["Strategy"], size: 35, img: "https://upload.wikimedia.org/wikipedia/en/0/08/Age_of_Empires_IV_Cover_Art.png" },
 
 { name: "AGE OF EMPIRES II DEFINITIVE EDITION", genre: ["Strategy"], size: 33, img: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQuEJAORLYWCvt9bBKyI4AuEKGFTluZU-0I3SfaSUh1jZExuRDh" },
 
@@ -140,7 +140,7 @@ const allGames = [
 
 { name: "CALL OF DUTY - MODERN WARFARE (2019) CAMPAIGN", size: 109, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/1/1f/Call_of_Duty_Modern_Warfare_%282019%29_cover.jpg" },
 
-{ name: "CALL OF DUTY - MODERN WARFARE II (2022) CAMPAIGN ONLY", size: 33.2, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/4/4a/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg" },
+{ name: "CALL OF DUTY - MODERN WARFARE II (2022) CAMPAIGN ONLY", size: 35, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/4/4a/Call_of_Duty_Modern_Warfare_II_Key_Art.jpg" },
 
 { name: "CALL OF DUTY MODERN WARFARE III (2023)", size: 53, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/f/f6/MWIII_Cover_Art.png" },
 
@@ -303,6 +303,8 @@ const allGames = [
 { name: "FIGHT NIGHT FOREVER", genre: ["Sports", "Fighting"], size: 7, img: "https://cdn2.steamgriddb.com/thumb/61972e693fd7f112e9bbf1223850f953.jpg" },
 
 { name: "FINAL FANTASY REMAKE INTERGRADE", genre: ["RPG", "Fantasy"], size: 87.7, img: "https://m.media-amazon.com/images/M/MV5BMGYwOTFiYWEtNmY4Yy00NmUwLWJiN2ItZjNkMTk5NDg2MTc3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
+
+{ name: "FINAL FANTASY TACTICS - THE IVALICE CHRONICLES ", genre: ["Tactical RPG", "Fantasy"], size: 12, img: "https://cdn.loaded.com/500x706/media/catalog/product/f/i/final_fantasy_tactics_-_the_ivalice_chronicles_cdkeys_xbox_1.png" },
 
 { name: "FINAL FANTASY VII REBIRTH", genre: ["RPG", "Fantasy"], size: 153, img: "https://upload.wikimedia.org/wikipedia/en/7/75/Boxart_for_Final_Fantasy_VII_Rebirth.png" },
 
