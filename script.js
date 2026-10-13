@@ -190,6 +190,8 @@ const allGames = [
 
 { name: "COMMAND AND CONQUER 4 - TIBERIAN TWILIGHT", size: 5.41, genre: ["Strategy","RTS"], img: "https://upload.wikimedia.org/wikipedia/en/8/83/Cc4tt-cover.jpg" },
 
+{ name: "COMMAND AND CONQUER GENERALS ZERO HOUR", size: 4, genre: ["Strategy","RTS"], img: "https://upload.wikimedia.org/wikipedia/en/2/20/Cncgzh-win-cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "COMPANY OF HEROES - COMPLETE EDITION", size: 8.91, genre: ["Strategy","RTS"], img: "https://down-ph.img.susercontent.com/file/ph-11134207-7r98z-lwc4e3wxcqqp47" },
 
 { name: "COMPANY OF HEROES 2 - MASTER COLLECTION", size: 31.0, genre: ["Strategy","RTS"], img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbZ74WuxispkEmiS_k395Zm6ENUhXJnVKgxdWlRkm2qdxwD_Vbr8nqg2oABpF8tWNUmQ8&usqp=CAU" },
