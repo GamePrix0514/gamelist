@@ -176,6 +176,8 @@ const allGames = [
 
 { name: "CALL OF DUTY WWII", size: 41.8, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/1/18/Call_of_Duty_WWII_Cover_Art.jpg" },
 
+{ name: "CALL OF DUTY: MODERN WARFARE 4", size: 72, genre: ["FPS","Action"], img: "https://upload.wikimedia.org/wikipedia/en/0/05/Call_of_Duty_Modern_Warfare_4_cover_art.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "CITIES - SKYLINES COMPLETE DLC", size: 16.3, genre: ["Simulation","City Builder"], img: "https://m.media-amazon.com/images/I/61fJdSCC1BL._UF1000,1000_QL80_.jpg" },
 
 { name: "CITIES SKYLINES 2", size: 64, genre: ["Simulation","City Builder"], img: "https://upload.wikimedia.org/wikipedia/en/3/35/Cities_Skylines_II_Cover_Art.png" },
