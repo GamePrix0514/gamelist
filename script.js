@@ -496,7 +496,7 @@ const allGames = [
 
 { name: "NEED FOR SPEED CARBON", genre: ["Racing"], size: 5.11, img: "https://w0.peakpx.com/wallpaper/801/770/HD-wallpaper-need-4-speed-carbon-evo-mitsubishi-mitsubishi-evo-ix-need4speed-need4speedcarbon-needforspeed-nfs-nfscarbon-ubc.jpg" },
 
-{ name: "NEED FOR SPEED HEAT DELUXE EDITION", genre: ["Racing"], size: 30.2, img: "https://s.pacn.ws/1/p/10n/need-for-speed-heat-deluxe-edition-659881.12.jpg?v=sl4ufg" },
+{ name: "NEED FOR SPEED HEAT DELUXE EDITION", genre: ["Racing"], size: 34, img: "https://s.pacn.ws/1/p/10n/need-for-speed-heat-deluxe-edition-659881.12.jpg?v=sl4ufg" },
 
 { name: "NEED FOR SPEED MOST WANTED (2005)", genre: ["Racing"], size: 2.78, img: "https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Need_for_Speed_Most_Wanted_Box_Art.jpg/250px-Need_for_Speed_Most_Wanted_Box_Art.jpg" },
 
