@@ -520,6 +520,8 @@ const allGames = [
 
 { name: "NO MANS SKY", genre: ["Survival","Open World"], size: 18.9, img: "https://upload.wikimedia.org/wikipedia/en/6/67/No_Man%27s_Sky.jpg" },
 
+{ name: "OMNIMMUSHA: WAY OF THE SWORD", genre: ["Action-adventure"], size: 56, img: "https://upload.wikimedia.org/wikipedia/en/6/6a/Onimusha_Way_of_the_Sword.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "ONE PIECE PIRATE WARRIORS 3 GOLD EDITION", genre: ["Action","Anime"], size: 11.4, img: "https://cdn11.bigcommerce.com/s-k0hjo2yyrq/images/stencil/1280x1280/products/1226/1283/One_Piece_Pirate_Warriors_3_Gold_Edition_Packshot__58977.1726658252.jpg?c=1" },
 
 { name: "ONE PIECE PIRATE WARRIORS 4 ULTIMATE EDITION", genre: ["Action","Anime"], size: 26.6, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co73ta.jpg" },
