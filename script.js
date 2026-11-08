@@ -234,6 +234,8 @@ const allGames = [
 
 { name: "DEMON SLAYER KIMETSU NO YAIBA – THE HINOKAMI CHRONICLES", genre: ["Action", "Anime"], size: 9.98, img: "https://upload.wikimedia.org/wikipedia/en/4/40/Demon_Slayer_Kimetsu_no_Yaiba_%E2%80%93_The_Hinokami_Chronicles_box_art.jpg" },
 
+{ name: "DEMON SLAYER - THE HINOKAMI CHRONICLES 2 ", genre: ["Action", "Anime"], size: 25, img: "https://upload.wikimedia.org/wikipedia/en/4/40/Demon_Slayer_Kimetsu_no_Yaiba_%E2%80%93_The_Hinokami_Chronicles_box_art.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
 { name: "DETROIT BECOME HUMAN", genre: ["Adventure", "Story"], size: 59, img: "https://upload.wikimedia.org/wikipedia/en/e/ee/Detroit_Become_Human.jpg" },
 
 { name: "DEVIL MAY CRY 4", genre: ["Action", "Hack & Slash"], size: 24.7, img: "https://upload.wikimedia.org/wikipedia/en/b/bb/DMC4COVER.jpg" },
