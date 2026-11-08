@@ -562,8 +562,6 @@ const allGames = [
 
 { name: "READY OR NOT", genre: ["FPS","Tactical"], size: 65, img: "https://image.api.playstation.com/vulcan/ap/rnd/202504/0914/da9f50007c771345aba1636b0e3aa47e3210fa36991b36f7.jpg" },
 
-{ name: "REAL BOXING", genre: ["Sports","Fighting"], size: 1.53, img: "https://store-images.s-microsoft.com/image/apps.49258.13510798886623386.c7ed3c21-fa92-4f38-acee-aed027575fe6.5ee74f43-6a26-4741-8298-8cc2e75bbcf4" },
-
 { name: "REANIMAL", genre: ["Horror","Adventure"], size: 15, img: "https://upload.wikimedia.org/wikipedia/en/9/9c/Reanimal_cover_art.jpg" },
 
 { name: "RED DEAD REDEMPTION + UNDEAD NIGHTMARE", genre: ["Action","Open World"], size: 9.73, img: "https://media.rockstargames.com/rockstargames/img/global/news/upload/reddeadredemption_undeadnightmare_art.png" },
