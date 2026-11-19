@@ -754,6 +754,8 @@ const allGames = [
 
 { name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
 
+{ name: "WARCRAFT III REFORGED", genre: ["Strategy","RTS"], size: 42, img: "https://upload.wikimedia.org/wikipedia/en/4/4f/Warcraft_III_Reforged_Logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },  
+
 { name: "WARHAMMER 40,000: MECHANICUS II", genre: ["Strategy","Turn-Based"], size: 19, img: "https://upload.wikimedia.org/wikipedia/en/1/1e/Warhammer_40%2C000_Mechanicus_II.png" },
 
 { name: "WARHAMMER 40000 SPACE MARINE 2", genre: ["Action","TPS"], size: 64.7, img: "https://upload.wikimedia.org/wikipedia/en/4/42/Warhammer_40%2C000_Space_Marine_2_cover_art.jpg" },
