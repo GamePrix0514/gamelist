@@ -628,8 +628,6 @@ const allGames = [
 
 { name: "SILENT HILL 3", genre: ["Horror","Survival"], size: 5.07, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sh3_boxart.jpg/250px-Sh3_boxart.jpg" },
 
-{ name: "SILENT HILL 4 NEW EDITION", genre: ["Horror","Survival"], size: 3.63, img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Silent2002.jpg/250px-Silent2002.jpg" },
-
 { name: "SILENT HILL F", genre: ["Horror","Survival"], size: 47.9, img: "https://img.game8.co/4130881/2b19ba68655d60ad2879409fdc168678.png/show" },
 
 { name: "SILENT HILL HOMECOMING", genre: ["Horror","Survival"], size: 8.18, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_Homecoming.jpg" },
