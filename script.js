@@ -274,6 +274,8 @@ const allGames = [
 
 { name: "DYNASTY WARRIORS ORIGINS", genre: ["Action", "Hack & Slash"], size: 45.1, img: "https://upload.wikimedia.org/wikipedia/en/5/55/Dynasty_Warriors_Origins_Cover_1.jpg" },
 
+{ name: "EA SPORTS FC 27 ", genre: ["Sports", "Simulation"], size: 63, img: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSs_9VawBvgogSvSGlDoZ5b8UzEKG3FbAtjyTDLLn5ZWhsM7-ri" },
+
 { name: "ELDEN RING NIGHTREIGN", genre: ["RPG", "Fantasy"], size: 20.6, img: "https://upload.wikimedia.org/wikipedia/en/f/f0/Elden_Ring_Nightreign_cover_art.png" },
 
 { name: "ELDEN RING SHADOW OF THE ERDTREE", genre: ["RPG", "Fantasy"], size: 67.5, img: "https://e.snmc.io/lk/g/x/49c95fd9b3bd6c15b02dd7220adab755/11828234" },
@@ -546,6 +548,8 @@ const allGames = [
 
 { name: "PET SHOP SIMULATOR", genre: ["Simulation"], size: 4.88, img: "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co82bw.jpg" },
 
+{ name: "PHANTOM BLADE ZERO", genre: ["Action","RPG"], size: 143, img: "https://upload.wikimedia.org/wikipedia/en/4/41/Phantom_Blade_Zero_cover_art.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original" },
+
 { name: "POLICE SIMULATOR PATROL OFFICERS", genre: ["Simulation"], size: 12.4, img: "https://cdn.technobezz.com/games/games/cover/police-simulator-patrol-officers/police-simulator-patrol-officers-cover-gamebezz-com.jpg" },
 
 { name: "PRAGMATA", genre: ["Sci-Fi","Adventure"], size: 35, img: "https://upload.wikimedia.org/wikipedia/commons/f/fb/Pragmata_cover.jpg" },
@@ -553,6 +557,8 @@ const allGames = [
 { name: "PROJECT ZOMBOID", genre: ["Survival","Zombie"], size: 6.91, img: "https://m.media-amazon.com/images/M/MV5BNTA5ZDJkMzAtZGZkZC00MDk3LTkyZTktZTBjZjZiZDZmZjAxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" },
 
 { name: "PLANTS VS ZOMBIES", genre: ["Strategy","Tower Defense"], size: 0.0831, img: "https://upload.wikimedia.org/wikipedia/en/9/9c/PlantsvsZombiesCoverArt.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
+
+{ name: "POKEMON POKOPIA", genre: ["Social Simulation","Sandbox"], size: 7, img: "https://upload.wikimedia.org/wikipedia/en/6/6a/Pok%C3%A9mon_Pokopia_box_art.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },
 
 { name: "POKEMON SCARLET-VIOLET", genre: ["RPG","Adventure"], size: 13, img: "https://upload.wikimedia.org/wikipedia/en/0/00/Pok%C3%A9mon_Scarlet_and_Violet_banner.png" },
 
@@ -740,6 +746,8 @@ const allGames = [
 
 { name: "UNCHARTED LEGACY OF THIEVES COLLECTION", genre: ["Action","Adventure"], size: 124, img: "https://owp.klarna.com/product/640x640/3007557856/Uncharted-Legacy-Of-Thieves-Collection-(PC).jpg?ph=true" },
 
+{ name: "UFC 4", genre: ["Sports","Fighting"], size: 31, img: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2024/12/mixcollage-08-dec-2024-11-40-pm-5820.jpg?q=50&fit=crop&w=480&h=600&dpr=1.5" },
+
 { name: "UNDISPUTED", genre: ["Sports","Fighting"], size: 18, img: "https://cdn.loaded.com/500x706/media/catalog/product/n/e/new_project_-_2023-02-01t163153.562.jpg" },
 
 { name: "UNRAVEL TWO", genre: ["Puzzle","Co-op"], size: 6.76, img: "https://m.media-amazon.com/images/M/MV5BYzZmYzBhMjYtZjcyZC00NmJjLThlZmItMjM0NjU0NTk1YmMxXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" },
@@ -753,8 +761,6 @@ const allGames = [
 { name: "VIRTUA.FIGHTER.5.R.E.V.O", genre: ["Fighting"], size: 21.5, img: "https://cdn.sega.co.uk/mhc-sega/public/styles/1280/public/content/media/images/raster/vf5revo_vertical_cover.jpg.webp?itok=2mZE2zf7" },
 
 { name: "WARCRAFT III", genre: ["Strategy","RTS"], size: 2, img: "https://upload.wikimedia.org/wikipedia/en/8/87/Warcraftiii-frozen-throne-boxcover.jpg" },
-
-{ name: "WARCRAFT III REFORGED", genre: ["Strategy","RTS"], size: 42, img: "https://upload.wikimedia.org/wikipedia/en/4/4f/Warcraft_III_Reforged_Logo.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original" },  
 
 { name: "WARHAMMER 40,000: MECHANICUS II", genre: ["Strategy","Turn-Based"], size: 19, img: "https://upload.wikimedia.org/wikipedia/en/1/1e/Warhammer_40%2C000_Mechanicus_II.png" },
 
