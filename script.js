@@ -953,8 +953,6 @@ const lowEndGames = [
 
 { name: "SILENT HILL 3", genre: ["Horror","Survival"], size: 5.07, img: "https://upload.wikimedia.org/wikipedia/en/thumb/c/ca/Sh3_boxart.jpg/250px-Sh3_boxart.jpg" },
 
-{ name: "SILENT HILL 4 NEW EDITION", genre: ["Horror","Survival"], size: 3.63, img: "https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Silent2002.jpg/250px-Silent2002.jpg" },
-
 { name: "SILENT HILL HOMECOMING", genre: ["Horror","Survival"], size: 8.18, img: "https://upload.wikimedia.org/wikipedia/en/f/f1/Silent_Hill_Homecoming.jpg" },
 
 { name: "SLEEPING DOGS DEFINITIVE EDITION", genre: ["Action","Open World"], size: 16.5, img: "https://store-images.s-microsoft.com/image/apps.27657.69516029925336975.e3cb0155-71cd-4799-bed4-63da86cce109.61267421-c294-418d-98ad-81f696989b4f" },
